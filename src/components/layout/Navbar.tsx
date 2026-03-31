@@ -41,7 +41,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="flex items-center gap-4">
-            <a href="https://wa.me/5511999999999" target="_blank">
+            <a href="https://wa.me/5511964197606" target="_blank">
               <Button size="sm" className="hidden sm:block">
                 Fale Comigo
               </Button>
@@ -87,7 +87,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511964197606"
               target="_blank"
               className="block py-3 px-2"
             >

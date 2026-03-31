@@ -63,7 +63,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5511964197606"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/diegoscs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
@@ -100,7 +100,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/diego-candido-8b0850222/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
@@ -115,7 +115,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="mailto:diego@dscs.com.br"
+                href="mailto:diego.candido.pro@gmail.com"
                 className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
                 aria-label="Email"
               >

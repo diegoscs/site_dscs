@@ -16,9 +16,9 @@ export default function Footer() {
       { label: "Blog", href: "#blog", external: false },
     ],
     Sociais: [
-      { label: "GitHub", href: "https://github.com", external: true },
-      { label: "LinkedIn", href: "https://linkedin.com", external: true },
-      { label: "WhatsApp", href: "https://wa.me/5511999999999", external: true },
+      { label: "GitHub", href: "https://github.com/diegoscs", external: true },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/diego-candido-8b0850222/", external: true },
+      { label: "WhatsApp", href: "https://wa.me/5511964197606", external: true },
     ],
   };
 
