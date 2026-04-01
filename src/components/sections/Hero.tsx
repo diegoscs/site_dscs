@@ -1,159 +1,134 @@
 "use client";
 
-import Button from "@/components/ui/Button";
-import Link from "next/link";
-
 export default function Hero() {
   return (
-    <section className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-bg-dark via-bg-secondary-dark to-bg-dark -z-10" />
+    <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-56px)] text-center overflow-hidden px-6">
+      {/* Subtle radial glow — very restrained like Linear */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(91,106,240,0.10) 0%, transparent 70%)",
+        }}
+      />
 
-      {/* Animated background elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl -z-10 animate-pulse" />
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl -z-10 animate-pulse delay-1000" />
+      {/* Grid overlay — subtle texture */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--color-text-dark) 1px, transparent 1px), linear-gradient(90deg, var(--color-text-dark) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Text */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <p className="text-primary font-semibold text-lg">
-                👋 Olá, eu sou
-              </p>
-              <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
-                Diego Candido
-              </h1>
-              <p className="text-2xl text-text-secondary font-light">
-                Full Stack Developer | Data Engineer
-              </p>
-            </div>
+      {/* Badge */}
+      <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[var(--color-border-dark)] bg-[var(--color-bg-surface)] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)]">
+        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]" aria-hidden="true" />
+        Disponível para novos projetos
+      </div>
 
-            <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
-              Transformo ideias em sistemas escaláveis. Especializado em
-              soluções web modernas, painéis administrativos e plataformas
-              data-driven. Desde MVP até sistemas corporativos com Next.js,
-              React, Node.js e arquitetura de dados robusta.
-            </p>
+      {/* Main headline */}
+      <h1 className="max-w-3xl text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] text-[var(--color-text-dark)]">
+        O sistema de desenvolvimento
+        <br className="hidden sm:block" />
+        <span className="text-[var(--color-text-secondary)]"> que entrega resultados.</span>
+      </h1>
 
-            {/* Tech stack preview */}
-            <div className="space-y-3">
-              <p className="text-sm text-text-secondary font-semibold">
-                Tecnologias:
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "React",
-                  "Next.js",
-                  "Node.js",
-                  "TypeScript",
-                  "Tailwind CSS",
-                  "PostgreSQL",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 bg-bg-secondary-dark text-text-secondary border border-border-dark rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
+      {/* Subtitle */}
+      <p className="mt-6 max-w-xl text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed">
+        Transformo ideias em sistemas escaláveis. Full Stack Developer & Data Engineer
+        especializado em Next.js, Node.js e arquitetura de dados robusta.
+      </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a
-                href="https://wa.me/5511964197606"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="w-full sm:w-auto">
-                  Fale Comigo via WhatsApp
-                </Button>
-              </a>
-              <Link href="#portfolio">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto"
-                >
-                  Ver Portfolio
-                </Button>
-              </Link>
-            </div>
+      {/* CTAs */}
+      <div className="mt-10 flex flex-col sm:flex-row items-center gap-3">
+        <a
+          href="https://wa.me/5511964197606"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+        >
+          Fale via WhatsApp
+          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          <span className="sr-only">(abre em nova aba)</span>
+        </a>
+        <a
+          href="#portfolio"
+          className="flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold text-[var(--color-text-secondary)] border border-[var(--color-border-dark)] hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
+        >
+          Ver Portfolio
+        </a>
+      </div>
 
-            {/* Social Links */}
-            <div className="flex gap-4 pt-4">
-              <a
-                href="https://github.com/diegoscs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
-                aria-label="GitHub"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/diego-candido-8b0850222/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
-                aria-label="LinkedIn"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                </svg>
-              </a>
-              <a
-                href="mailto:diego.candido.pro@gmail.com"
-                className="w-10 h-10 rounded-lg bg-bg-secondary-dark hover:bg-primary/20 flex items-center justify-center transition-smooth"
-                aria-label="Email"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                </svg>
-              </a>
-            </div>
+      {/* App mockup / code block */}
+      <div className="mt-20 w-full max-w-4xl" aria-hidden="true">
+        <div className="rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] overflow-hidden shadow-[0_0_80px_-20px_rgba(91,106,240,0.15)]">
+          {/* Window chrome */}
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-[var(--color-border-dark)]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+            <span className="ml-auto text-xs text-[var(--color-text-muted)] font-mono">
+              diego-candido / portfolio
+            </span>
           </div>
-
-          {/* Right side - Visual element */}
-          <div className="hidden lg:flex items-center justify-center">
-            <div className="relative w-full aspect-square">
-              {/* Code snippet decoration */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl backdrop-blur-sm border border-border-dark p-6">
-                <pre className="text-sm text-text-secondary font-mono overflow-hidden">
-                  <code>{`const developer = {
-  name: "Diego Candido",
-  role: "Full Stack Developer",
-  languages: [
-    "JavaScript",
-    "TypeScript",
-    "Python"
-  ],
-  specialties: [
-    "Web Apps",
-    "Data Engineering",
-    "System Design"
-  ],
-  passion: "Building scalable solutions"
-}`}</code>
-                </pre>
-              </div>
-            </div>
+          {/* Code content */}
+          <div className="p-6 text-left overflow-auto">
+            <pre className="text-xs sm:text-sm font-mono text-[var(--color-text-secondary)] leading-relaxed">
+              <code>
+                <span className="text-[var(--color-text-muted)]">{"// "}</span>
+                <span className="text-[var(--color-text-secondary)]">Diego Candido — dev profile</span>
+                {"\n\n"}
+                <span className="text-[#5b6af0]">const</span>
+                <span className="text-[var(--color-text-dark)]"> developer</span>
+                <span className="text-[var(--color-text-secondary)]"> = {"{"}</span>
+                {"\n"}
+                {"  "}
+                <span className="text-[#79c0ff]">name</span>
+                <span className="text-[var(--color-text-secondary)]">: </span>
+                <span className="text-[#a5d6ff]">&quot;Diego Candido&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">,</span>
+                {"\n"}
+                {"  "}
+                <span className="text-[#79c0ff]">roles</span>
+                <span className="text-[var(--color-text-secondary)]">: [</span>
+                <span className="text-[#a5d6ff]">&quot;Full Stack Developer&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">, </span>
+                <span className="text-[#a5d6ff]">&quot;Data Engineer&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">],</span>
+                {"\n"}
+                {"  "}
+                <span className="text-[#79c0ff]">stack</span>
+                <span className="text-[var(--color-text-secondary)]">: [</span>
+                <span className="text-[#a5d6ff]">&quot;Next.js&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">, </span>
+                <span className="text-[#a5d6ff]">&quot;Node.js&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">, </span>
+                <span className="text-[#a5d6ff]">&quot;PostgreSQL&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">, </span>
+                <span className="text-[#a5d6ff]">&quot;Python&quot;</span>
+                <span className="text-[var(--color-text-secondary)]">],</span>
+                {"\n"}
+                {"  "}
+                <span className="text-[#79c0ff]">available</span>
+                <span className="text-[var(--color-text-secondary)]">: </span>
+                <span className="text-[#7ee787]">true</span>
+                <span className="text-[var(--color-text-secondary)]">,</span>
+                {"\n"}
+                {"  "}
+                <span className="text-[#79c0ff]">focus</span>
+                <span className="text-[var(--color-text-secondary)]">: </span>
+                <span className="text-[#a5d6ff]">&quot;Scalable systems &amp; data-driven products&quot;</span>
+                {"\n"}
+                <span className="text-[var(--color-text-secondary)]">{"}"}</span>
+                {"\n\n"}
+                <span className="text-[var(--color-text-muted)]">{"// "}</span>
+                <span className="text-[var(--color-text-secondary)]">From MVP to enterprise. Let&apos;s build.</span>
+              </code>
+            </pre>
           </div>
         </div>
       </div>

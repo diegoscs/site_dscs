@@ -56,11 +56,6 @@ src/
   - Accent: `#fbbf24` (Âmbar)
   - Secondary: `#1f2937` (Cinza)
 
-## 📝 Notas
-
-- Veja `DSCS_PLANEJAMENTO_COMPLETO.md` para detalhes completos do projeto
-- Favicon extraído de `favicon_io.zip` está em `public/`
-
 ## 👨‍💻 Autor
 
 Diego Candido - Full Stack Developer

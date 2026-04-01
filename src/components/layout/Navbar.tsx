@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Button from "@/components/ui/Button";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -15,59 +14,59 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-bg-dark/95 backdrop-blur-md border-b border-border-dark">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+    <nav className="sticky top-0 z-50 border-b border-[var(--color-border-dark)] bg-[var(--color-bg-dark)]/90 backdrop-blur-xl">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center font-bold text-white">
-              DC
-            </div>
-            <span className="text-xl font-bold hidden sm:inline">DSCS</span>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <img
+              src="/favicon-32x32.png"
+              alt="DSCS Logo"
+              className="w-6 h-6"
+            />
+            <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">
+              DSCS
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-text-secondary hover:text-text-dark transition-smooth"
+                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="flex items-center gap-4">
-            <a href="https://wa.me/5511964197606" target="_blank">
-              <Button size="sm" className="hidden sm:block">
-                Fale Comigo
-              </Button>
+          {/* CTA */}
+          <div className="flex items-center gap-3">
+            <a
+              href="https://wa.me/5511964197606"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-md text-sm font-medium bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+            >
+              Fale Comigo
+              <span className="sr-only">(abre em nova aba)</span>
             </a>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 hover:bg-bg-secondary-dark rounded-lg transition-smooth"
-              aria-label="Toggle menu"
+              className="md:hidden p-1.5 rounded-md text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] hover:bg-[var(--color-bg-surface)] transition-colors"
+              aria-label="Alternar menu de navegação"
+              aria-expanded={mobileMenuOpen}
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
-                  d={
-                    mobileMenuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M4 6h16M4 12h16M4 18h16"
-                  }
+                  strokeWidth={1.5}
+                  d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                 />
               </svg>
             </button>
@@ -76,12 +75,13 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 border-t border-border-dark">
+          <div className="md:hidden py-3 border-t border-[var(--color-border-dark)]">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-3 px-2 text-text-secondary hover:text-text-dark transition-smooth"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block py-2.5 px-1 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors"
               >
                 {link.label}
               </a>
@@ -89,11 +89,11 @@ export default function Navbar() {
             <a
               href="https://wa.me/5511964197606"
               target="_blank"
-              className="block py-3 px-2"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium bg-[var(--color-text-dark)] text-[var(--color-bg-dark)]"
             >
-              <Button size="sm" className="w-full">
-                Fale Comigo
-              </Button>
+              Fale Comigo
+              <span className="sr-only">(abre em nova aba)</span>
             </a>
           </div>
         )}

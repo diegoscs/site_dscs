@@ -53,6 +53,7 @@ export default function Footer() {
                       className="text-text-secondary hover:text-text-dark transition-smooth text-sm"
                     >
                       {link.label}
+                      {link.external && <span className="sr-only">(abre em nova aba)</span>}
                     </a>
                   </li>
                 ))}
