@@ -80,28 +80,28 @@ export default function Hero() {
             <pre className="text-xs sm:text-sm font-mono text-[var(--color-text-secondary)] leading-relaxed">
               <code>
                 <span className="text-[var(--color-text-muted)]">{"// "}</span>
-                <span className="text-[var(--color-text-secondary)]">Diego Candido — dev profile</span>
+                <span className="text-[var(--color-text-secondary)]">Diego Candido — desenvolvedor full stack</span>
                 {"\n\n"}
                 <span className="text-[#5b6af0]">const</span>
-                <span className="text-[var(--color-text-dark)]"> developer</span>
+                <span className="text-[var(--color-text-dark)]"> desenvolvedor</span>
                 <span className="text-[var(--color-text-secondary)]"> = {"{"}</span>
                 {"\n"}
                 {"  "}
-                <span className="text-[#79c0ff]">name</span>
+                <span className="text-[#79c0ff]">nome</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
                 <span className="text-[#a5d6ff]">&quot;Diego Candido&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">,</span>
                 {"\n"}
                 {"  "}
-                <span className="text-[#79c0ff]">roles</span>
+                <span className="text-[#79c0ff]">especialidades</span>
                 <span className="text-[var(--color-text-secondary)]">: [</span>
-                <span className="text-[#a5d6ff]">&quot;Full Stack Developer&quot;</span>
+                <span className="text-[#a5d6ff]">&quot;Full Stack&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">, </span>
-                <span className="text-[#a5d6ff]">&quot;Data Engineer&quot;</span>
+                <span className="text-[#a5d6ff]">&quot;Engenharia de Dados&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">],</span>
                 {"\n"}
                 {"  "}
-                <span className="text-[#79c0ff]">stack</span>
+                <span className="text-[#79c0ff]">tecnologias</span>
                 <span className="text-[var(--color-text-secondary)]">: [</span>
                 <span className="text-[#a5d6ff]">&quot;Next.js&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">, </span>
@@ -113,20 +113,20 @@ export default function Hero() {
                 <span className="text-[var(--color-text-secondary)]">],</span>
                 {"\n"}
                 {"  "}
-                <span className="text-[#79c0ff]">available</span>
+                <span className="text-[#79c0ff]">disponivel</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
                 <span className="text-[#7ee787]">true</span>
                 <span className="text-[var(--color-text-secondary)]">,</span>
                 {"\n"}
                 {"  "}
-                <span className="text-[#79c0ff]">focus</span>
+                <span className="text-[#79c0ff]">foco</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
-                <span className="text-[#a5d6ff]">&quot;Scalable systems &amp; data-driven products&quot;</span>
+                <span className="text-[#a5d6ff]">&quot;Sistemas escaláveis e produtos orientados por dados&quot;</span>
                 {"\n"}
                 <span className="text-[var(--color-text-secondary)]">{"}"}</span>
                 {"\n\n"}
                 <span className="text-[var(--color-text-muted)]">{"// "}</span>
-                <span className="text-[var(--color-text-secondary)]">From MVP to enterprise. Let&apos;s build.</span>
+                <span className="text-[var(--color-text-secondary)]">De MVP a empresa. Vamos construir.</span>
               </code>
             </pre>
           </div>

@@ -29,12 +29,14 @@ export default function Footer() {
           {/* Logo Section */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center font-bold text-white">
-                DC
-              </div>
-              <span className="text-xl font-bold">DSCS</span>
+              <img
+                src="/favicon-32x32.png"
+                alt="DSCS Logo"
+                className="w-10 h-10"
+              />
+              <span className="text-xl font-bold text-[var(--color-text-dark)]">DSCS</span>
             </Link>
-            <p className="text-text-secondary text-sm">
+            <p className="text-[var(--color-text-secondary)] text-sm">
               Transformando ideias em sistemas escaláveis desde {currentYear - 5}.
             </p>
           </div>
