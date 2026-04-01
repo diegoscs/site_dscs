@@ -30,11 +30,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#0f1419" />
+        <meta name="theme-color" content="#09090B" />
       </head>
-      <body className="bg-bg-dark text-text-dark flex flex-col min-h-screen">
+      <body className="bg-bg text-text flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <div className="flex-1">{children}</div>
         <Footer />
       </body>
     </html>

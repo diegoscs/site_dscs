@@ -8,41 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "var(--color-primary)",
-        accent: "var(--color-accent)",
-        secondary: "var(--color-secondary)",
-        "bg-light": "var(--color-bg-light)",
-        "bg-dark": "var(--color-bg-dark)",
-        "text-light": "var(--color-text-light)",
-        "text-dark": "var(--color-text-dark)",
-        "text-secondary": "var(--color-text-secondary)",
-        "border-light": "var(--color-border-light)",
-        "border-dark": "var(--color-border-dark)",
-        "bg-secondary-light": "var(--color-bg-secondary-light)",
-        "bg-secondary-dark": "var(--color-bg-secondary-dark)",
+        bg:           "var(--color-bg)",
+        "bg-card":    "var(--color-bg-card)",
+        border:       "var(--color-border)",
+        "border-hover": "var(--color-border-hover)",
+        text:         "var(--color-text)",
+        muted:        "var(--color-text-muted)",
+        subtle:       "var(--color-text-subtle)",
+        primary:      "var(--color-primary)",
+        accent:       "var(--color-accent)",
       },
       fontFamily: {
+        sans:  ["Inter", "sans-serif"],
         display: ["Poppins", "sans-serif"],
-        heading: ["Inter", "sans-serif"],
-        body: ["Inter", "sans-serif"],
-        mono: ["Fira Code", "monospace"],
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: "var(--color-text-dark)",
-            a: {
-              color: "var(--color-primary)",
-              textDecoration: "none",
-              "&:hover": {
-                textDecoration: "underline",
-              },
-            },
-          },
-        },
+        mono:  ["Fira Code", "monospace"],
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
-  darkMode: "class",
+  plugins: [],
 };

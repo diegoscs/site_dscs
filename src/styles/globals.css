@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700&family=Fira+Code:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&family=Fira+Code:wght@400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,67 +19,9 @@ html {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  color: var(--color-text-dark);
-  background-color: var(--color-bg-dark);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.875rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-code {
-  font-family: "Fira Code", monospace;
-  font-size: 0.875rem;
-}
-
-/* Scrollbar customizado */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-bg-secondary-dark);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-border-dark);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-secondary);
-}
-
-/* Transições suaves */
-@layer components {
-  .transition-smooth {
-    @apply transition-all duration-300 ease-in-out;
-  }
-
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 to-amber-300 bg-clip-text text-transparent;
-  }
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-border-hover); }
