@@ -1,3 +1,5 @@
+"use client";
+
 import ContactForm from "@/components/forms/ContactForm";
 
 const canaisContato = [

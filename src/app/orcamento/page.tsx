@@ -1,3 +1,5 @@
+"use client";
+
 import QuoteForm from "@/components/forms/QuoteForm";
 import Link from "next/link";
 
