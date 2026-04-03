@@ -70,7 +70,7 @@ export default function Portfolio() {
       : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="portfolio" className="py-32 px-6 border-t border-[var(--color-border-dark)]" aria-labelledby="portfolio-heading">
+    <section id="portfolio" className="pt-24 pb-32 px-6" aria-labelledby="portfolio-heading">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
