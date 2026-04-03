@@ -1,80 +1,80 @@
-"use client";
-
 import Link from "next/link";
-import Process from "@/components/sections/Process";
 
 const servicos = [
   {
     id: 1,
     titulo: "Web Apps & SaaS",
-    descricao: "Aplicações web escaláveis e plataformas SaaS que crescem com seu negócio",
-    icone: "🌐",
+    descricao: "Aplicações web escaláveis e plataformas SaaS do conceito ao deploy, com arquitetura limpa e UX que converte.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="13" y="3" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="3" y="13" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="13" y="13" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
     tecnologias: ["Next.js", "React", "Node.js", "PostgreSQL", "TypeScript"],
-    beneficios: [
-      "Performance otimizada (FCP < 1s)",
-      "Autenticação e autorização seguras",
-      "Escalabilidade automática",
-      "Backups e disaster recovery",
-      "Monitoramento 24/7",
-    ],
-    casoUso: "Plataformas de agendamento, dashboards administrativos, marketplaces, redes sociais, aplicações internas",
-    preco: "R$ 15.000 - R$ 100.000+",
-    prazo: "6-16 semanas",
-    destaque: true,
+    prazo: "6–16 semanas",
+    preco: "R$ 15k–100k+",
   },
   {
     id: 2,
     titulo: "Engenharia de Dados",
-    descricao: "Pipelines ETL robustos, data warehouses e analytics que transformam dados em decisões",
-    icone: "📊",
+    descricao: "Pipelines ETL robustos, data warehouses e dashboards que transformam dados brutos em decisões estratégicas.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 12l4-4 3 3 4-5 3 3 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
     tecnologias: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery"],
-    beneficios: [
-      "Pipelines automatizados e confiáveis",
-      "Redução de 40-60% em custos de infra",
-      "Dados em tempo real",
-      "Dashboards inteligentes",
-      "Governança de dados",
-    ],
-    casoUso: "Data warehouses, dashboards analíticos, BI, sistemas de recomendação, detecção de fraude",
-    preco: "R$ 10.000 - R$ 50.000",
-    prazo: "4-12 semanas",
-    destaque: false,
+    prazo: "4–12 semanas",
+    preco: "R$ 10k–50k",
   },
   {
     id: 3,
     titulo: "Sistemas & Escala",
-    descricao: "Arquitetura de microsserviços, orquestração e infraestrutura production-ready",
-    icone: "⚙️",
+    descricao: "Arquitetura de microsserviços, containers e infraestrutura production-ready que cresce com seu negócio.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M7 12h3M14 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
     tecnologias: ["Docker", "Kubernetes", "RabbitMQ", "Redis", "Node.js"],
-    beneficios: [
-      "Arquitetura escalável e resiliente",
-      "Suporte a 100K+ requisições/segundo",
-      "Latência < 50ms",
-      "Recuperação automática de falhas",
-      "Observabilidade completa",
-    ],
-    casoUso: "Plataformas de alta disponibilidade, processamento em tempo real, message queues, APIs escaláveis",
-    preco: "R$ 20.000 - R$ 80.000",
-    prazo: "8-16 semanas",
-    destaque: false,
+    prazo: "8–16 semanas",
+    preco: "R$ 20k–80k",
   },
   {
     id: 4,
     titulo: "Consultoria Técnica",
-    descricao: "Auditorias, code reviews, estratégia arquitetural e mentoria de equipes",
-    icone: "💡",
-    tecnologias: ["Análise de código", "Arquitetura", "Performance", "Segurança"],
-    beneficios: [
-      "Identificação de gargalos",
-      "Melhorias de performance (até 10x)",
-      "Redução de debt técnico",
-      "Mentoria especializada",
-      "Documentação técnica",
-    ],
-    casoUso: "Auditorias de código, otimização de performance, refatorações, planejamento técnico",
-    preco: "R$ 5.000 - R$ 30.000",
-    prazo: "2-8 semanas",
-    destaque: false,
+    descricao: "Auditorias, code reviews, estratégia arquitetural e mentoria para equipes que querem evoluir rápido.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M9 11l3 3L22 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    tecnologias: ["Code Review", "Arquitetura", "Performance", "Segurança"],
+    prazo: "2–8 semanas",
+    preco: "R$ 5k–30k",
+  },
+];
+
+const faq = [
+  {
+    pergunta: "Qual é o tempo mínimo para um projeto?",
+    resposta: "Depende do escopo. Projetos pequenos podem ser entregues em 2–4 semanas. Sistemas mais complexos levam 8–16 semanas.",
+  },
+  {
+    pergunta: "Posso contratar por hora ou apenas projeto fechado?",
+    resposta: "Ambos. Ofereço projetos fechados (escopo definido) ou contratos por hora/mensal para trabalhos contínuos.",
+  },
+  {
+    pergunta: "Como funciona a comunicação durante o projeto?",
+    resposta: "Updates diários, reuniões semanais de sync e acesso ao repositório com progresso em tempo real.",
   },
 ];
 
@@ -82,204 +82,104 @@ export default function Servicos() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm text-[var(--color-text-muted)] mb-4 uppercase tracking-widest">
+      <section className="pt-24 pb-12 px-6">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs text-[var(--color-text-muted)] mb-3 uppercase tracking-widest font-mono">
             Serviços
           </p>
-          <h1 className="text-5xl sm:text-6xl font-bold text-[var(--color-text-dark)] mb-6 leading-[1.1]">
-            Expertise em <span className="text-[var(--color-primary)]">full stack</span>, <span className="text-[var(--color-primary)]">dados</span> e <span className="text-[var(--color-primary)]">escala</span>.
+          <h1 className="text-4xl sm:text-5xl font-bold text-[var(--color-text-dark)] mb-4 leading-[1.1]">
+            O que posso construir para você.
           </h1>
-          <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto">
-            Oferço uma gama completa de serviços para transformar suas ideias em soluções reais, escaláveis e de impacto mensurável.
+          <p className="text-[var(--color-text-secondary)] max-w-xl">
+            Full Stack, Engenharia de Dados e Infraestrutura — tudo integrado em soluções que funcionam em produção.
           </p>
         </div>
       </section>
 
-      {/* Serviços Grid */}
-      <section className="py-20 px-6 border-t border-[var(--color-border-dark)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {servicos.map((servico) => (
-              <div
-                key={servico.id}
-                className={`rounded-xl border transition-all p-8 ${
-                  servico.destaque
-                    ? "border-[var(--color-primary)] bg-[var(--color-primary)]/5"
-                    : "border-[var(--color-border-dark)] bg-[var(--color-bg-dark)]"
-                }`}
-              >
-                {/* Badge Destaque */}
-                {servico.destaque && (
-                  <span className="inline-block px-3 py-1 rounded-full bg-[var(--color-primary)]/20 border border-[var(--color-primary)] text-xs font-mono text-[var(--color-primary)] mb-4">
-                    ⭐ Mais Popular
-                  </span>
-                )}
+      {/* Serviços */}
+      <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
+        <div className="max-w-3xl mx-auto space-y-px">
+          {servicos.map((servico) => (
+            <div
+              key={servico.id}
+              className="group flex gap-6 py-8 border-b border-[var(--color-border-dark)] last:border-b-0"
+            >
+              {/* Ícone */}
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] transition-colors">
+                {servico.icone}
+              </div>
 
-                {/* Ícone + Título */}
-                <div className="text-4xl mb-4">{servico.icone}</div>
-                <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-2">
-                  {servico.titulo}
-                </h3>
-                <p className="text-[var(--color-text-secondary)] mb-6">
+              {/* Conteúdo */}
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+                  <h2 className="text-base font-semibold text-[var(--color-text-dark)]">
+                    {servico.titulo}
+                  </h2>
+                  <span className="text-xs font-mono text-[var(--color-text-muted)]">
+                    {servico.preco} · {servico.prazo}
+                  </span>
+                </div>
+                <p className="text-sm text-[var(--color-text-secondary)] mb-4 leading-relaxed">
                   {servico.descricao}
                 </p>
-
-                {/* Tecnologias */}
-                <div className="mb-6">
-                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-3">
-                    Tecnologias
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {servico.tecnologias.map((tech) => (
-                      <span
-                        key={tech}
-                        className="text-xs px-2.5 py-1 rounded border border-[var(--color-border-dark)] text-[var(--color-text-secondary)] bg-[var(--color-bg-secondary-dark)]"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2">
+                  {servico.tecnologias.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-xs px-2 py-0.5 rounded border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-
-                {/* Benefícios */}
-                <div className="mb-6 p-4 rounded-lg bg-[var(--color-bg-surface)] border border-[var(--color-border-dark)]">
-                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-3">
-                    Benefícios
-                  </p>
-                  <ul className="space-y-2">
-                    {servico.beneficios.slice(0, 3).map((beneficio, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-[var(--color-text-secondary)]">
-                        <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-[var(--color-primary)]" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        {beneficio}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Caso de Uso */}
-                <div className="mb-6">
-                  <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-2">
-                    Ideal para
-                  </p>
-                  <p className="text-sm text-[var(--color-text-secondary)]">
-                    {servico.casoUso}
-                  </p>
-                </div>
-
-                {/* Preço e Prazo */}
-                <div className="grid grid-cols-2 gap-4 mb-6 p-4 rounded-lg bg-[var(--color-bg-secondary-dark)] border border-[var(--color-border-dark)]">
-                  <div>
-                    <p className="text-xs text-[var(--color-text-muted)] mb-1">Investimento</p>
-                    <p className="font-bold text-[var(--color-primary)]">{servico.preco}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-[var(--color-text-muted)] mb-1">Prazo</p>
-                    <p className="font-bold text-[var(--color-primary)]">{servico.prazo}</p>
-                  </div>
-                </div>
-
-                {/* CTA */}
-                <Link
-                  href="/orcamento"
-                  className="w-full block text-center py-2.5 rounded-lg bg-[var(--color-primary)] text-white font-semibold hover:bg-blue-600 transition-colors"
-                >
-                  Solicitar Orçamento
-                </Link>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA único */}
+        <div className="max-w-3xl mx-auto pt-10">
+          <Link
+            href="/orcamento"
+            className="flex items-center justify-center gap-2 w-full sm:w-auto sm:inline-flex px-8 py-3 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+          >
+            Solicitar orçamento
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
-      <Process />
-
-      {/* FAQ Rápido */}
-      <section className="py-20 px-6 border-t border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)]">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-[var(--color-text-dark)] mb-12 text-center">
+      {/* FAQ */}
+      <section className="py-16 px-6 border-t border-[var(--color-border-dark)]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-sm text-[var(--color-text-muted)] uppercase tracking-widest font-mono mb-8">
             Dúvidas frequentes
           </h2>
-
-          <div className="space-y-6">
-            <details className="group border border-[var(--color-border-dark)] rounded-lg p-6 bg-[var(--color-bg-dark)] cursor-pointer">
-              <summary className="flex items-center justify-between font-semibold text-[var(--color-text-dark)]">
-                Qual é o tempo mínimo para um projeto?
-                <svg className="w-5 h-5 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </summary>
-              <p className="text-[var(--color-text-secondary)] mt-4">
-                Depende do escopo. Projetos pequenos podem ser entregues em 2-4 semanas. Sistemas mais complexos levam 8-16 semanas.
-              </p>
-            </details>
-
-            <details className="group border border-[var(--color-border-dark)] rounded-lg p-6 bg-[var(--color-bg-dark)] cursor-pointer">
-              <summary className="flex items-center justify-between font-semibold text-[var(--color-text-dark)]">
-                Vocês fazem manutenção após o launch?
-                <svg className="w-5 h-5 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </summary>
-              <p className="text-[var(--color-text-secondary)] mt-4">
-                Sim! Ofereço planos de suporte com SLA garantido. Monitoramento 24/7, bug fixes e melhorias contínuas.
-              </p>
-            </details>
-
-            <details className="group border border-[var(--color-border-dark)] rounded-lg p-6 bg-[var(--color-bg-dark)] cursor-pointer">
-              <summary className="flex items-center justify-between font-semibold text-[var(--color-text-dark)]">
-                Posso contratar por hora ou é apenas projeto fechado?
-                <svg className="w-5 h-5 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </summary>
-              <p className="text-[var(--color-text-secondary)] mt-4">
-                Ambos! Ofereço projetos fechados (mais comum) ou contratos por hora/mensal para trabalhos contínuos.
-              </p>
-            </details>
-
-            <details className="group border border-[var(--color-border-dark)] rounded-lg p-6 bg-[var(--color-bg-dark)] cursor-pointer">
-              <summary className="flex items-center justify-between font-semibold text-[var(--color-text-dark)]">
-                Como é a comunicação durante o projeto?
-                <svg className="w-5 h-5 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </summary>
-              <p className="text-[var(--color-text-secondary)] mt-4">
-                Comunicação diária via email/Slack. Reuniões semanais para sync, code reviews biweekly, e updates contínuos no GitHub.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Final */}
-      <section className="py-20 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-[var(--color-text-dark)] mb-4">
-            Vamos começar seu projeto?
-          </h2>
-          <p className="text-[var(--color-text-secondary)] mb-8">
-            Estou pronto para transformar suas ideias em realidade. Faça uma consulta gratuita.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/orcamento"
-              className="px-6 py-3 rounded-lg bg-[var(--color-primary)] text-white font-semibold hover:bg-blue-600 transition-colors"
-            >
-              Solicitar Orçamento
-            </Link>
-            <a
-              href="https://wa.me/5511964197606"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg border border-[var(--color-border-dark)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-dark)] transition-colors"
-            >
-              Chamar no WhatsApp
-              <span className="sr-only">(abre em nova aba)</span>
-            </a>
+          <div className="space-y-0">
+            {faq.map((item, idx) => (
+              <details
+                key={idx}
+                className="group border-b border-[var(--color-border-dark)] py-5 cursor-pointer"
+              >
+                <summary className="flex items-center justify-between text-sm font-semibold text-[var(--color-text-dark)] list-none">
+                  {item.pergunta}
+                  <svg
+                    className="w-4 h-4 flex-shrink-0 text-[var(--color-text-muted)] group-open:rotate-45 transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  </svg>
+                </summary>
+                <p className="text-sm text-[var(--color-text-secondary)] mt-3 leading-relaxed">
+                  {item.resposta}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
