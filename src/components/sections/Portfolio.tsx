@@ -172,16 +172,6 @@ export default function Portfolio() {
                   {project.description}
                 </p>
 
-                {/* Metrics */}
-                <div className="grid grid-cols-3 gap-2 mb-6 p-3 bg-[var(--color-bg-surface)] rounded-lg">
-                  {Object.entries(project.metrics).map(([key, value]) => (
-                    <div key={key} className="text-center">
-                      <p className="text-xs text-[var(--color-text-muted)] capitalize mb-1">{key}</p>
-                      <p className="text-sm font-semibold text-[var(--color-primary)]">{value}</p>
-                    </div>
-                  ))}
-                </div>
-
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
@@ -221,24 +211,6 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold text-[var(--color-text-dark)] mb-4">
-            Tem um projeto em mente?
-          </h3>
-          <p className="text-[var(--color-text-secondary)] mb-8 max-w-2xl mx-auto">
-            Vamos conversar sobre suas ideias e transformá-las em realidade. Cada projeto é uma oportunidade de criar algo extraordinário.
-          </p>
-          <a
-            href="https://wa.me/5511964197606"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm font-semibold bg-[var(--color-primary)] text-white hover:bg-blue-600 transition-colors"
-          >
-            Iniciar conversa
-            <span className="sr-only">(abre em nova aba)</span>
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -128,52 +128,10 @@ export default function Services() {
                 {service.description}
               </p>
 
-              {/* Features List */}
-              <ul className="space-y-2">
-                {service.features.slice(0, 3).map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-xs text-[var(--color-text-secondary)]">
-                    <svg
-                      className="w-3 h-3 mt-1 flex-shrink-0 text-[var(--color-primary)]"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      aria-hidden="true"
-                    >
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* View More */}
-              <a
-                href="#portfolio"
-                className="inline-flex items-center gap-2 text-xs font-semibold text-[var(--color-primary)] hover:text-[var(--color-text-dark)] transition-colors mt-6"
-              >
-                Ver exemplos
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-20 text-center">
-          <p className="text-[var(--color-text-secondary)] mb-6 max-w-2xl mx-auto">
-            Cada projeto é customizado para seus objetivos específicos. Independentemente do tamanho, garantimos qualidade, escalabilidade e suporte contínuo.
-          </p>
-          <a
-            href="https://wa.me/5511964197606"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm font-semibold bg-[var(--color-primary)] text-white hover:bg-blue-600 transition-colors"
-          >
-            Conversar sobre seu projeto
-            <span className="sr-only">(abre em nova aba)</span>
-          </a>
-        </div>
       </div>
     </section>
   );
