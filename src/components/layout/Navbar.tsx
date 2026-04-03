@@ -42,19 +42,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA */}
+          {/* Mobile Menu Button */}
           <div className="flex items-center gap-3">
-            <a
-              href="https://wa.me/5511964197606"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-md text-sm font-medium bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
-            >
-              Fale Comigo
-              <span className="sr-only">(abre em nova aba)</span>
-            </a>
-
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-1.5 rounded-md text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] hover:bg-[var(--color-bg-surface)] transition-colors"
@@ -86,15 +75,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://wa.me/5511964197606"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium bg-[var(--color-text-dark)] text-[var(--color-bg-dark)]"
-            >
-              Fale Comigo
-              <span className="sr-only">(abre em nova aba)</span>
-            </a>
           </div>
         )}
       </div>
