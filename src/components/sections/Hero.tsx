@@ -22,12 +22,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Badge */}
-      <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[var(--color-border-dark)] bg-[var(--color-bg-surface)] px-3.5 py-1.5 text-xs text-[var(--color-text-secondary)]">
-        <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]" aria-hidden="true" />
-        Disponível para novos projetos
-      </div>
-
       {/* Main headline */}
       <h1 className="max-w-3xl text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] text-[var(--color-text-dark)]">
         O sistema de desenvolvimento
