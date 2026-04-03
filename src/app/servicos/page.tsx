@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Process from "@/components/sections/Process";
 
 const servicos = [
   {
@@ -74,34 +75,6 @@ const servicos = [
     preco: "R$ 5.000 - R$ 30.000",
     prazo: "2-8 semanas",
     destaque: false,
-  },
-];
-
-const processoServico = [
-  {
-    numero: "01",
-    titulo: "Diagnóstico",
-    descricao: "Análise profunda do projeto, desafios, tecnologias atuais e objetivos",
-  },
-  {
-    numero: "02",
-    titulo: "Proposta",
-    descricao: "Plano detalhado com timeline, recursos, tecnologias e estimativa de custo",
-  },
-  {
-    numero: "03",
-    titulo: "Desenvolvimento",
-    descricao: "Sprints de 2 semanas com daily updates, code reviews e testes contínuos",
-  },
-  {
-    numero: "04",
-    titulo: "QA & Deploy",
-    descricao: "Testes completos, otimização de performance e deploy seguro em produção",
-  },
-  {
-    numero: "05",
-    titulo: "Suporte",
-    descricao: "Suporte técnico, monitoramento e melhorias baseadas em dados reais",
   },
 ];
 
@@ -221,39 +194,7 @@ export default function Servicos() {
         </div>
       </section>
 
-      {/* Processo */}
-      <section className="py-20 px-6 border-t border-[var(--color-border-dark)]">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm text-[var(--color-text-muted)] mb-4 uppercase tracking-widest">
-              Como funciona
-            </p>
-            <h2 className="text-4xl font-bold text-[var(--color-text-dark)]">
-              Meu processo com você
-            </h2>
-          </div>
-
-          <div className="space-y-8">
-            {processoServico.map((passo, idx) => (
-              <div key={idx} className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-lg border-2 border-[var(--color-primary)] bg-[var(--color-bg-dark)] flex items-center justify-center font-bold text-[var(--color-primary)]">
-                    {passo.numero}
-                  </div>
-                </div>
-                <div className="flex-1 pt-1">
-                  <h3 className="text-lg font-bold text-[var(--color-text-dark)] mb-2">
-                    {passo.titulo}
-                  </h3>
-                  <p className="text-[var(--color-text-secondary)]">
-                    {passo.descricao}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Process />
 
       {/* FAQ Rápido */}
       <section className="py-20 px-6 border-t border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)]">
