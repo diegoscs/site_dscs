@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Dashboard Analítico",
     description: "Data warehouse com ETL pipeline automatizado, dashboards em tempo real e alertas inteligentes baseados em ML.",
-    category: "Data Engineering",
+    category: "Engenharia de Dados",
     tags: ["Python", "dbt", "Snowflake", "Prefect"],
     link: null,
     external: false,
@@ -59,7 +59,7 @@ const projects = [
   },
 ];
 
-const categories = ["Todos", "Web Apps", "Data Engineering", "Sistemas & Escala"];
+const categories = ["Todos", "Web Apps", "Engenharia de Dados", "Sistemas & Escala"];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("Todos");
