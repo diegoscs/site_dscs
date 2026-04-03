@@ -6,11 +6,8 @@ const servicos = [
     titulo: "Web Apps & SaaS",
     descricao: "Aplicações web escaláveis e plataformas SaaS do conceito ao deploy, com arquitetura limpa e UX que converte.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="3" y="3" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
-        <rect x="13" y="3" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
-        <rect x="3" y="13" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
-        <rect x="13" y="13" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M28 2.25h-24c-1.518 0.002-2.748 1.232-2.75 2.75v16c0.002 1.518 1.232 2.748 2.75 2.75h8.806l-2.167 4.5h-4.64c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h20c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-4.537l-2.25-4.5h8.787c1.518-0.002 2.748-1.232 2.75-2.75v-16c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM19.787 28.25h-7.482l2.166-4.5h3.065zM29.25 21c-0.001 0.69-0.56 1.249-1.25 1.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-16c0.001-0.69 0.56-1.249 1.25-1.25h24c0.69 0.001 1.249 0.56 1.25 1.25v0zM9.026 13.252l3.538-4.044c0.114-0.131 0.184-0.303 0.184-0.492 0-0.414-0.336-0.75-0.75-0.75-0.223 0-0.424 0.098-0.562 0.253l-0.001 0.001-4 4.572c-0.115 0.131-0.185 0.304-0.185 0.494 0 0.207 0.084 0.395 0.22 0.53l4 4c0.135 0.131 0.319 0.212 0.523 0.212 0.414 0 0.75-0.336 0.75-0.75 0-0.203-0.081-0.388-0.212-0.523l0 0zM20.564 8.221c-0.138-0.156-0.339-0.254-0.562-0.254-0.414 0-0.75 0.336-0.75 0.75 0 0.189 0.070 0.361 0.184 0.493l-0.001-0.001 3.537 4.043-3.504 3.504c-0.136 0.136-0.219 0.323-0.219 0.53 0 0.415 0.336 0.751 0.751 0.751 0.208 0 0.395-0.084 0.531-0.22v0l4-4c0.135-0.136 0.218-0.323 0.218-0.53 0-0.19-0.070-0.363-0.186-0.495l0.001 0.001z"/>
       </svg>
     ),
     tecnologias: ["Next.js", "React", "Node.js", "PostgreSQL", "TypeScript"],
@@ -20,9 +17,9 @@ const servicos = [
     titulo: "Engenharia de Dados",
     descricao: "Pipelines ETL robustos, data warehouses e dashboards que transformam dados brutos em decisões estratégicas.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M3 12l4-4 3 3 4-5 3 3 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <circle cx="23" cy="23" r="1"/><rect x="8" y="22" width="12" height="2"/><circle cx="23" cy="9" r="1"/><rect x="8" y="8" width="12" height="2"/>
+        <path d="M26,14a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v6a2,2,0,0,0,2,2H8v4H6a2,2,0,0,0-2,2v6a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V20a2,2,0,0,0-2-2H24V14ZM6,6H26v6H6ZM26,26H6V20H26Zm-4-8H10V14H22Z"/>
       </svg>
     ),
     tecnologias: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery"],
@@ -32,11 +29,8 @@ const servicos = [
     titulo: "Sistemas & Escala",
     descricao: "Arquitetura de microsserviços, containers e infraestrutura production-ready que cresce com seu negócio.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M7 12h3M14 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <path d="M23,1 C23,1 16.471872,0.541707069 14,3 C13.9767216,3.03685748 10,7 10,7 L5,8 L2,10 L10,14 L14,22 L16,19 L17,14 C17,14 20.9631426,10.0232786 21,10 C23.4582929,7.5281282 23,1 23,1 Z M17,8 C16.4475,8 16,7.5525 16,7 C16,6.4475 16.4475,6 17,6 C17.5525,6 18,6.4475 18,7 C18,7.5525 17.5525,8 17,8 Z M7,17 C6,16 4,16 3,17 C2,18 2,22 2,22 C2,22 6,22 7,21 C8,20 8,18 7,17 Z"/>
       </svg>
     ),
     tecnologias: ["Docker", "Kubernetes", "RabbitMQ", "Redis", "Node.js"],
@@ -46,9 +40,9 @@ const servicos = [
     titulo: "Consultoria Técnica",
     descricao: "Auditorias, code reviews, estratégia arquitetural e mentoria para equipes que querem evoluir rápido.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M9 11l3 3L22 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M2 5.5L3.21429 7L7.5 3"/><path d="M2 12.5L3.21429 14L7.5 10"/><path d="M2 19.5L3.21429 21L7.5 17"/>
+        <path d="M22 12H17M12 12H13.5"/><path d="M12 19H17M20.5 19H22"/><path d="M22 5L12 5"/>
       </svg>
     ),
     tecnologias: ["Code Review", "Arquitetura", "Performance", "Segurança"],
