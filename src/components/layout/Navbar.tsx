@@ -7,10 +7,10 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#servicos", label: "Serviços" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#sobre", label: "Sobre" },
-    { href: "#contato", label: "Contato" },
+    { href: "/servicos", label: "Serviços" },
+    { href: "/#portfolio", label: "Portfolio" },
+    { href: "/sobre", label: "Sobre" },
+    { href: "/contato", label: "Contato" },
   ];
 
   return (
@@ -32,13 +32,13 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -77,14 +77,14 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="md:hidden py-3 border-t border-[var(--color-border-dark)]">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="block py-2.5 px-1 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://wa.me/5511964197606"
