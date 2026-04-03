@@ -14,8 +14,6 @@ const servicos = [
       </svg>
     ),
     tecnologias: ["Next.js", "React", "Node.js", "PostgreSQL", "TypeScript"],
-    prazo: "6–16 semanas",
-    preco: "R$ 15k–100k+",
   },
   {
     id: 2,
@@ -28,8 +26,6 @@ const servicos = [
       </svg>
     ),
     tecnologias: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery"],
-    prazo: "4–12 semanas",
-    preco: "R$ 10k–50k",
   },
   {
     id: 3,
@@ -44,8 +40,6 @@ const servicos = [
       </svg>
     ),
     tecnologias: ["Docker", "Kubernetes", "RabbitMQ", "Redis", "Node.js"],
-    prazo: "8–16 semanas",
-    preco: "R$ 20k–80k",
   },
   {
     id: 4,
@@ -58,8 +52,6 @@ const servicos = [
       </svg>
     ),
     tecnologias: ["Code Review", "Arquitetura", "Performance", "Segurança"],
-    prazo: "2–8 semanas",
-    preco: "R$ 5k–30k",
   },
 ];
 
@@ -98,30 +90,27 @@ export default function Servicos() {
 
       {/* Serviços */}
       <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
-        <div className="max-w-3xl mx-auto space-y-px">
-          {servicos.map((servico) => (
-            <div
-              key={servico.id}
-              className="group flex gap-6 py-8 border-b border-[var(--color-border-dark)] last:border-b-0"
-            >
-              {/* Ícone */}
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] transition-colors">
-                {servico.icone}
-              </div>
-
-              {/* Conteúdo */}
-              <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
-                  <h2 className="text-base font-semibold text-[var(--color-text-dark)]">
-                    {servico.titulo}
-                  </h2>
-                  <span className="text-xs font-mono text-[var(--color-text-muted)]">
-                    {servico.preco} · {servico.prazo}
-                  </span>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {servicos.map((servico) => (
+              <div
+                key={servico.id}
+                className="group rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-dark)] p-6 hover:border-[var(--color-border-hover)] transition-colors duration-200"
+              >
+                {/* Ícone */}
+                <div className="w-10 h-10 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] transition-colors mb-5">
+                  {servico.icone}
                 </div>
-                <p className="text-sm text-[var(--color-text-secondary)] mb-4 leading-relaxed">
+
+                {/* Título + Descrição */}
+                <h2 className="text-base font-semibold text-[var(--color-text-dark)] mb-2">
+                  {servico.titulo}
+                </h2>
+                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5">
                   {servico.descricao}
                 </p>
+
+                {/* Tech tags */}
                 <div className="flex flex-wrap gap-2">
                   {servico.tecnologias.map((tech) => (
                     <span
@@ -133,21 +122,21 @@ export default function Servicos() {
                   ))}
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* CTA único */}
-        <div className="max-w-3xl mx-auto pt-10">
-          <Link
-            href="/orcamento"
-            className="flex items-center justify-center gap-2 w-full sm:w-auto sm:inline-flex px-8 py-3 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
-          >
-            Solicitar orçamento
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+          {/* CTA único */}
+          <div className="mt-10">
+            <Link
+              href="/orcamento"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto sm:inline-flex px-8 py-3 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+            >
+              Solicitar orçamento
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
