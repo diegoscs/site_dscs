@@ -17,33 +17,52 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 border-b border-[var(--color-border-dark)] bg-[var(--color-bg-dark)]/90 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <img
-              src="/favicon-32x32.png"
-              alt="DSCS Logo"
-              className="w-6 h-6"
-            />
-            <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">
-              DSCS
-            </span>
-          </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Desktop Navigation — split com logo no centro */}
+          <div className="hidden md:flex items-center justify-between w-full">
+            {/* Links esquerdos */}
+            <div className="flex items-center gap-6">
+              {navLinks.slice(0, 2).map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Logo centro */}
+            <Link href="/" className="flex items-center gap-2 group">
+              <img src="/favicon-32x32.png" alt="DSCS Logo" className="w-6 h-6" />
+              <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">
+                DSCS
+              </span>
+            </Link>
+
+            {/* Links direitos */}
+            <div className="flex items-center gap-6">
+              {navLinks.slice(2).map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
+          {/* Mobile: logo à esquerda + hamburguer */}
+          <Link href="/" className="flex md:hidden items-center gap-2.5">
+            <img src="/favicon-32x32.png" alt="DSCS Logo" className="w-6 h-6" />
+            <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">DSCS</span>
+          </Link>
+
           {/* Mobile Menu Button */}
-          <div className="flex items-center gap-3">
+          <div className="flex md:hidden items-center gap-3">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-1.5 rounded-md text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] hover:bg-[var(--color-bg-surface)] transition-colors"
