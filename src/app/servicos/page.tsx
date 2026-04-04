@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Serviços | Diego Candido",
+  description:
+    "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados. Soluções que funcionam em produção.",
+  openGraph: {
+    title: "Serviços | Diego Candido",
+    description:
+      "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados.",
+  },
+};
 
 const servicos = [
   {

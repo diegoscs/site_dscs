@@ -1,3 +1,15 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Política de Privacidade | Diego Candido",
+  description:
+    "Política de privacidade e conformidade com a LGPD do site DSCS — Diego Candido, Full Stack Developer.",
+  openGraph: {
+    title: "Política de Privacidade | Diego Candido",
+    description: "Política de privacidade e conformidade com a LGPD.",
+  },
+};
+
 export default function Politica() {
   const currentYear = new Date().getFullYear();
 

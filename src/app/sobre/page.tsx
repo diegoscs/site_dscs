@@ -1,4 +1,15 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre | Diego Candido",
+  description:
+    "Full Stack Developer & Data Engineer com experiência em Next.js, Node.js, Python e arquitetura de dados. Conheça minha trajetória desde 2019.",
+  openGraph: {
+    title: "Sobre | Diego Candido",
+    description:
+      "Full Stack Developer & Data Engineer — trajetória, stack e projetos desde 2019.",
+  },
+};
 
 const skills = [
   {

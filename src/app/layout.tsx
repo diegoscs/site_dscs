@@ -53,6 +53,33 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="bg-bg-dark text-text-dark flex flex-col min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Diego Candido",
+              url: "https://dscs.com.br",
+              jobTitle: "Full Stack Developer & Data Engineer",
+              email: "diego.candido.pro@gmail.com",
+              sameAs: [
+                "https://github.com/diegoscs",
+                "https://www.linkedin.com/in/diego-candido-8b0850222/",
+              ],
+              knowsAbout: [
+                "Next.js", "React", "Node.js", "TypeScript",
+                "Python", "PostgreSQL", "Data Engineering",
+                "Docker", "Kubernetes",
+              ],
+              offers: {
+                "@type": "Offer",
+                url: "https://dscs.com.br/orcamento",
+                description: "Desenvolvimento de software sob medida",
+              },
+            }),
+          }}
+        />
         <a href="#conteudo-principal" className="skip-to-content">Pular para o conteúdo principal</a>
         <Navbar />
         <main id="conteudo-principal" className="flex-1">{children}</main>

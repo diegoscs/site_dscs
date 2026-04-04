@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Contato | Diego Candido",
+  description:
+    "Entre em contato para conversar sobre seu projeto. Disponível via WhatsApp, e-mail, LinkedIn e GitHub.",
+  openGraph: {
+    title: "Contato | Diego Candido",
+    description: "Entre em contato para conversar sobre seu projeto.",
+  },
+};
 
 const canais = [
   {

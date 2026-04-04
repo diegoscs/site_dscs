@@ -1,4 +1,16 @@
+import type { Metadata } from "next";
 import OrcamentoForm from "@/components/forms/OrcamentoForm";
+
+export const metadata: Metadata = {
+  title: "Solicitar Orçamento | Diego Candido",
+  description:
+    "Solicite um orçamento personalizado para seu projeto. Preencha o formulário e receba uma proposta em até 48h.",
+  openGraph: {
+    title: "Solicitar Orçamento | Diego Candido",
+    description:
+      "Preencha o formulário e receba uma proposta personalizada em até 48h.",
+  },
+};
 
 export default function Orcamento() {
   return (
