@@ -18,41 +18,32 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
 
-          {/* Desktop Navigation — split com logo no centro */}
-          <div className="hidden md:flex items-center justify-between w-full">
-            {/* Links esquerdos */}
-            <div className="flex items-center gap-6">
-              {navLinks.slice(0, 2).map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+          {/* Desktop Navigation — logo centralizado */}
+          <div className="hidden md:flex items-center justify-center w-full gap-8">
+            {navLinks.slice(0, 2).map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
+              >
+                {link.label}
+              </Link>
+            ))}
 
-            {/* Logo centro */}
-            <Link href="/" className="flex items-center gap-2 group">
+            <Link href="/" className="flex items-center gap-2 mx-2">
               <img src="/favicon-32x32.png" alt="DSCS Logo" className="w-6 h-6" />
-              <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">
-                DSCS
-              </span>
+              <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">DSCS</span>
             </Link>
 
-            {/* Links direitos */}
-            <div className="flex items-center gap-6">
-              {navLinks.slice(2).map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+            {navLinks.slice(2).map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* Mobile: logo à esquerda + hamburguer */}
