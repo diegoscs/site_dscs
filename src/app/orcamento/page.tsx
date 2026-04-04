@@ -1,4 +1,4 @@
-import QuoteForm from "@/components/forms/QuoteForm";
+import OrcamentoForm from "@/components/forms/OrcamentoForm";
 
 export default function Orcamento() {
   return (
@@ -21,7 +21,7 @@ export default function Orcamento() {
       {/* Formulário */}
       <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
         <div className="max-w-2xl mx-auto">
-          <QuoteForm />
+          <OrcamentoForm />
         </div>
       </section>
     </>
