@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls -lah public/favicon*)"
+      "Bash(ls -lah public/favicon*)",
+      "Bash(gh pr:*)"
     ]
   }
 }

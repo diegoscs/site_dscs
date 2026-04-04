@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: "Sistema de Recomendação",
     description: "ML pipeline que analisa comportamento do usuário e recomenda produtos com precisão de 94% usando collaborative filtering.",
-    category: "Data Engineering",
+    category: "Engenharia de Dados",
     tags: ["Python", "TensorFlow", "Airflow", "BigQuery"],
     link: null,
     external: false,

@@ -3,8 +3,6 @@ import Link from "next/link";
 const canais = [
   {
     titulo: "WhatsApp",
-    contato: "+55 (11) 96419-7606",
-    detalhe: "Resposta imediata",
     link: "https://wa.me/5511964197606",
     external: true,
     icon: (
@@ -15,8 +13,6 @@ const canais = [
   },
   {
     titulo: "Email",
-    contato: "diego.candido.pro@gmail.com",
-    detalhe: "Respondo em até 24h",
     link: "mailto:diego.candido.pro@gmail.com",
     external: false,
     icon: (
@@ -28,8 +24,6 @@ const canais = [
   },
   {
     titulo: "LinkedIn",
-    contato: "diego-candido-8b0850222",
-    detalhe: "Networking & propostas",
     link: "https://www.linkedin.com/in/diego-candido-8b0850222/",
     external: true,
     icon: (
@@ -40,8 +34,6 @@ const canais = [
   },
   {
     titulo: "GitHub",
-    contato: "diegoscs",
-    detalhe: "Veja meus projetos",
     link: "https://github.com/diegoscs",
     external: true,
     icon: (
@@ -84,17 +76,9 @@ export default function Contato() {
               <div className="w-9 h-9 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] flex-shrink-0 transition-colors">
                 {canal.icon}
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-[var(--color-text-dark)]">
-                  {canal.titulo}
-                </p>
-                <p className="text-sm text-[var(--color-text-secondary)] truncate">
-                  {canal.contato}
-                </p>
-              </div>
-              <span className="text-xs text-[var(--color-text-muted)] hidden sm:block flex-shrink-0">
-                {canal.detalhe}
-              </span>
+              <p className="text-sm font-semibold text-[var(--color-text-dark)] flex-1">
+                {canal.titulo}
+              </p>
               <svg className="w-4 h-4 text-[var(--color-text-muted)] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
               </svg>

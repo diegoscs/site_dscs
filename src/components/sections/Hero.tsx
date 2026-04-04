@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-56px)] text-center overflow-hidden px-6">
-      {/* Subtle radial glow — very restrained like Linear */}
+      {/* Subtle radial glow */}
       <div
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
@@ -12,7 +14,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Grid overlay — subtle texture */}
+      {/* Grid overlay */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.03]"
         style={{
@@ -37,30 +39,26 @@ export default function Hero() {
 
       {/* CTAs */}
       <div className="mt-10 flex flex-col sm:flex-row items-center gap-3">
-        <a
-          href="https://wa.me/5511964197606"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/orcamento"
           className="flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
         >
-          Fale via WhatsApp
+          Solicitar orçamento
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
-          <span className="sr-only">(abre em nova aba)</span>
-        </a>
-        <a
-          href="#portfolio"
+        </Link>
+        <Link
+          href="/portfolio"
           className="flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold text-[var(--color-text-secondary)] border border-[var(--color-border-dark)] hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-dark)] transition-colors duration-150"
         >
           Ver Portfolio
-        </a>
+        </Link>
       </div>
 
-      {/* App mockup / code block */}
+      {/* Code block */}
       <div className="mt-20 w-full max-w-4xl" aria-hidden="true">
         <div className="rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] overflow-hidden shadow-[0_0_80px_-20px_rgba(91,106,240,0.15)]">
-          {/* Window chrome */}
           <div className="flex items-center gap-2 px-4 py-3 border-b border-[var(--color-border-dark)]">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
@@ -69,7 +67,6 @@ export default function Hero() {
               diego-candido / portfolio
             </span>
           </div>
-          {/* Code content */}
           <div className="p-6 text-left overflow-auto">
             <pre className="text-xs sm:text-sm font-mono text-[var(--color-text-secondary)] leading-relaxed">
               <code>
@@ -80,22 +77,19 @@ export default function Hero() {
                 <span className="text-[var(--color-text-dark)]"> desenvolvedor</span>
                 <span className="text-[var(--color-text-secondary)]"> = {"{"}</span>
                 {"\n"}
-                {"  "}
-                <span className="text-[#79c0ff]">nome</span>
+                {"  "}<span className="text-[#79c0ff]">nome</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
                 <span className="text-[#a5d6ff]">&quot;Diego Candido&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">,</span>
                 {"\n"}
-                {"  "}
-                <span className="text-[#79c0ff]">especialidades</span>
+                {"  "}<span className="text-[#79c0ff]">especialidades</span>
                 <span className="text-[var(--color-text-secondary)]">: [</span>
                 <span className="text-[#a5d6ff]">&quot;Full Stack&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">, </span>
                 <span className="text-[#a5d6ff]">&quot;Engenharia de Dados&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">],</span>
                 {"\n"}
-                {"  "}
-                <span className="text-[#79c0ff]">tecnologias</span>
+                {"  "}<span className="text-[#79c0ff]">tecnologias</span>
                 <span className="text-[var(--color-text-secondary)]">: [</span>
                 <span className="text-[#a5d6ff]">&quot;Next.js&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">, </span>
@@ -106,14 +100,12 @@ export default function Hero() {
                 <span className="text-[#a5d6ff]">&quot;Python&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">],</span>
                 {"\n"}
-                {"  "}
-                <span className="text-[#79c0ff]">disponivel</span>
+                {"  "}<span className="text-[#79c0ff]">disponivel</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
                 <span className="text-[#7ee787]">true</span>
                 <span className="text-[var(--color-text-secondary)]">,</span>
                 {"\n"}
-                {"  "}
-                <span className="text-[#79c0ff]">foco</span>
+                {"  "}<span className="text-[#79c0ff]">foco</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
                 <span className="text-[#a5d6ff]">&quot;Sistemas escaláveis e produtos orientados por dados&quot;</span>
                 {"\n"}

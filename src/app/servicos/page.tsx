@@ -2,65 +2,100 @@ import Link from "next/link";
 
 const servicos = [
   {
-    id: 1,
-    titulo: "Web Apps & SaaS",
-    descricao: "Aplicações web escaláveis e plataformas SaaS do conceito ao deploy, com arquitetura limpa e UX que converte.",
+    id: "landing",
+    titulo: "Landing Page",
+    descricao: "Página focada em converter visitantes em clientes. Design profissional, carregamento rápido e otimizada para aparecer no Google.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-        <path d="M28 2.25h-24c-1.518 0.002-2.748 1.232-2.75 2.75v16c0.002 1.518 1.232 2.748 2.75 2.75h8.806l-2.167 4.5h-4.64c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h20c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-4.537l-2.25-4.5h8.787c1.518-0.002 2.748-1.232 2.75-2.75v-16c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM19.787 28.25h-7.482l2.166-4.5h3.065zM29.25 21c-0.001 0.69-0.56 1.249-1.25 1.25h-24c-0.69-0.001-1.249-0.56-1.25-1.25v-16c0.001-0.69 0.56-1.249 1.25-1.25h24c0.69 0.001 1.249 0.56 1.25 1.25v0zM9.026 13.252l3.538-4.044c0.114-0.131 0.184-0.303 0.184-0.492 0-0.414-0.336-0.75-0.75-0.75-0.223 0-0.424 0.098-0.562 0.253l-0.001 0.001-4 4.572c-0.115 0.131-0.185 0.304-0.185 0.494 0 0.207 0.084 0.395 0.22 0.53l4 4c0.135 0.131 0.319 0.212 0.523 0.212 0.414 0 0.75-0.336 0.75-0.75 0-0.203-0.081-0.388-0.212-0.523l0 0zM20.564 8.221c-0.138-0.156-0.339-0.254-0.562-0.254-0.414 0-0.75 0.336-0.75 0.75 0 0.189 0.070 0.361 0.184 0.493l-0.001-0.001 3.537 4.043-3.504 3.504c-0.136 0.136-0.219 0.323-0.219 0.53 0 0.415 0.336 0.751 0.751 0.751 0.208 0 0.395-0.084 0.531-0.22v0l4-4c0.135-0.136 0.218-0.323 0.218-0.53 0-0.19-0.070-0.363-0.186-0.495l0.001 0.001z"/>
+      <svg width="20" height="20" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <line x1="3" y1="11" x2="29" y2="11"/>
+        <line x1="7" y1="8" x2="7" y2="8"/>
+        <line x1="10" y1="8" x2="10" y2="8"/>
+        <line x1="13" y1="8" x2="13" y2="8"/>
+        <rect x="3" y="5" width="26" height="22"/>
+        <rect x="6" y="14" width="10" height="10"/>
+        <rect x="19" y="21" width="7" height="3"/>
+        <line x1="20" y1="15" x2="26" y2="15"/>
+        <line x1="23" y1="18" x2="26" y2="18"/>
+        <polyline points="6,22 12,19 16,22"/>
+        <line x1="9" y1="17" x2="9" y2="17"/>
       </svg>
     ),
-    tecnologias: ["Next.js", "React", "Node.js", "PostgreSQL", "TypeScript"],
+    tecnologias: ["Next.js", "React", "Tailwind CSS", "SEO"],
   },
   {
-    id: 2,
-    titulo: "Engenharia de Dados",
-    descricao: "Pipelines ETL robustos, data warehouses e dashboards que transformam dados brutos em decisões estratégicas.",
+    id: "site",
+    titulo: "Site Completo",
+    descricao: "Site institucional com múltiplas páginas, blog editável e tudo que sua empresa precisa para ter presença online profissional.",
     icone: (
-      <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-        <circle cx="23" cy="23" r="1"/><rect x="8" y="22" width="12" height="2"/><circle cx="23" cy="9" r="1"/><rect x="8" y="8" width="12" height="2"/>
-        <path d="M26,14a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v6a2,2,0,0,0,2,2H8v4H6a2,2,0,0,0-2,2v6a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V20a2,2,0,0,0-2-2H24V14ZM6,6H26v6H6ZM26,26H6V20H26Zm-4-8H10V14H22Z"/>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
       </svg>
     ),
-    tecnologias: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery"],
+    tecnologias: ["Next.js", "CMS", "SEO", "TypeScript"],
   },
   {
-    id: 3,
-    titulo: "Sistemas & Escala",
-    descricao: "Arquitetura de microsserviços, containers e infraestrutura production-ready que cresce com seu negócio.",
-    icone: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-        <path d="M23,1 C23,1 16.471872,0.541707069 14,3 C13.9767216,3.03685748 10,7 10,7 L5,8 L2,10 L10,14 L14,22 L16,19 L17,14 C17,14 20.9631426,10.0232786 21,10 C23.4582929,7.5281282 23,1 23,1 Z M17,8 C16.4475,8 16,7.5525 16,7 C16,6.4475 16.4475,6 17,6 C17.5525,6 18,6.4475 18,7 C18,7.5525 17.5525,8 17,8 Z M7,17 C6,16 4,16 3,17 C2,18 2,22 2,22 C2,22 6,22 7,21 C8,20 8,18 7,17 Z"/>
-      </svg>
-    ),
-    tecnologias: ["Docker", "Kubernetes", "RabbitMQ", "Redis", "Node.js"],
-  },
-  {
-    id: 4,
-    titulo: "Consultoria Técnica",
-    descricao: "Auditorias, code reviews, estratégia arquitetural e mentoria para equipes que querem evoluir rápido.",
+    id: "sistema",
+    titulo: "Sistema Web / App",
+    descricao: "Aplicações com login, pagamentos, integrações e lógica de negócio. Do MVP ao produto escalável em produção.",
     icone: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M2 5.5L3.21429 7L7.5 3"/><path d="M2 12.5L3.21429 14L7.5 10"/><path d="M2 19.5L3.21429 21L7.5 17"/>
-        <path d="M22 12H17M12 12H13.5"/><path d="M12 19H17M20.5 19H22"/><path d="M22 5L12 5"/>
+        <rect x="2" y="3" width="20" height="14" rx="2"/>
+        <path d="M8 21h8M12 17v4"/>
+        <path d="M7 8l2 2-2 2M11 10h4"/>
       </svg>
     ),
-    tecnologias: ["Code Review", "Arquitetura", "Performance", "Segurança"],
+    tecnologias: ["Next.js", "Node.js", "PostgreSQL", "TypeScript"],
+  },
+  {
+    id: "painel",
+    titulo: "Painel / Dashboard",
+    descricao: "Visualize seus dados em tempo real. Gráficos, relatórios, alertas e gestão centralizada para tomar decisões com clareza.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+        <path d="M13 12C13 11.4477 13.4477 11 14 11H19C19.5523 11 20 11.4477 20 12V19C20 19.5523 19.5523 20 19 20H14C13.4477 20 13 19.5523 13 19V12Z"/>
+        <path d="M4 5C4 4.44772 4.44772 4 5 4H9C9.55228 4 10 4.44772 10 5V12C10 12.5523 9.55228 13 9 13H5C4.44772 13 4 12.5523 4 12V5Z"/>
+        <path d="M4 17C4 16.4477 4.44772 16 5 16H9C9.55228 16 10 16.4477 10 17V19C10 19.5523 9.55228 20 9 20H5C4.44772 20 4 19.5523 4 19V17Z"/>
+        <path d="M13 5C13 4.44772 13.4477 4 14 4H19C19.5523 4 20 4.44772 20 5V7C20 7.55228 19.5523 8 19 8H14C13.4477 8 13 7.55228 13 7V5Z"/>
+      </svg>
+    ),
+    tecnologias: ["React", "Python", "PostgreSQL", "Power BI"],
+  },
+  {
+    id: "automacao",
+    titulo: "Automação",
+    descricao: "Elimine tarefas manuais e repetitivas. Integrações entre sistemas, notificações automáticas e fluxos que trabalham por você.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M6.08998 13.28H9.17998V20.48C9.17998 22.16 10.09 22.5 11.2 21.24L18.77 12.64C19.7 11.59 19.31 10.72 17.9 10.72H14.81V3.52002C14.81 1.84002 13.9 1.50002 12.79 2.76002L5.21998 11.36C4.29998 12.42 4.68998 13.28 6.08998 13.28Z"/>
+      </svg>
+    ),
+    tecnologias: ["Node.js", "Python", "Webhooks", "WhatsApp API"],
+  },
+  {
+    id: "engdados",
+    titulo: "Engenharia de Dados",
+    descricao: "Pipelines ETL, data warehouses e infraestrutura de dados que transforma informação bruta em decisões estratégicas.",
+    icone: (
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path fillRule="evenodd" d="M2.75 2.5A1.75 1.75 0 001 4.25v1C1 6.216 1.784 7 2.75 7h1a1.75 1.75 0 001.732-1.5H6.5a.75.75 0 01.75.75v3.5A2.25 2.25 0 009.5 12h1.018c.121.848.85 1.5 1.732 1.5h1A1.75 1.75 0 0015 11.75v-1A1.75 1.75 0 0013.25 9h-1a1.75 1.75 0 00-1.732 1.5H9.5a.75.75 0 01-.75-.75v-3.5A2.25 2.25 0 006.5 4H5.482A1.75 1.75 0 003.75 2.5h-1zM2.5 4.25A.25.25 0 012.75 4h1a.25.25 0 01.25.25v1a.25.25 0 01-.25.25h-1a.25.25 0 01-.25-.25v-1zm9.75 6.25a.25.25 0 00-.25.25v1c0 .138.112.25.25.25h1a.25.25 0 00.25-.25v-1a.25.25 0 00-.25-.25h-1z" clipRule="evenodd"/>
+      </svg>
+    ),
+    tecnologias: ["Python", "dbt", "Airflow", "BigQuery", "Snowflake"],
   },
 ];
 
 const faq = [
   {
     pergunta: "Qual é o tempo mínimo para um projeto?",
-    resposta: "Depende do escopo. Projetos pequenos podem ser entregues em 2–4 semanas. Sistemas mais complexos levam 8–16 semanas.",
+    resposta: "Depende do escopo. Uma landing page pode ser entregue em 1–2 semanas. Sistemas mais complexos levam de 6 a 16 semanas.",
   },
   {
     pergunta: "Posso contratar por hora ou apenas projeto fechado?",
-    resposta: "Ambos. Ofereço projetos fechados (escopo definido) ou contratos por hora/mensal para trabalhos contínuos.",
+    resposta: "Ambos. Ofereço projetos fechados (escopo definido) ou contratos por hora/mensais para trabalhos contínuos.",
   },
   {
     pergunta: "Como funciona a comunicação durante o projeto?",
-    resposta: "Updates diários, reuniões semanais de sync e acesso ao repositório com progresso em tempo real.",
+    resposta: "Updates frequentes, reuniões de alinhamento e acesso ao repositório com progresso em tempo real.",
   },
 ];
 
@@ -77,7 +112,7 @@ export default function Servicos() {
             O que posso construir para você.
           </h1>
           <p className="text-[var(--color-text-secondary)] max-w-xl">
-            Full Stack, Engenharia de Dados e Infraestrutura — tudo integrado em soluções que funcionam em produção.
+            Da landing page ao sistema completo — entrego soluções que funcionam em produção e geram resultados reais.
           </p>
         </div>
       </section>
@@ -85,26 +120,21 @@ export default function Servicos() {
       {/* Serviços */}
       <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {servicos.map((servico) => (
               <div
                 key={servico.id}
                 className="group rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-dark)] p-6 hover:border-[var(--color-border-hover)] transition-colors duration-200"
               >
-                {/* Ícone */}
                 <div className="w-10 h-10 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] transition-colors mb-5">
                   {servico.icone}
                 </div>
-
-                {/* Título + Descrição */}
                 <h2 className="text-base font-semibold text-[var(--color-text-dark)] mb-2">
                   {servico.titulo}
                 </h2>
                 <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5">
                   {servico.descricao}
                 </p>
-
-                {/* Tech tags */}
                 <div className="flex flex-wrap gap-2">
                   {servico.tecnologias.map((tech) => (
                     <span
@@ -119,7 +149,6 @@ export default function Servicos() {
             ))}
           </div>
 
-          {/* CTA único */}
           <div className="mt-10">
             <Link
               href="/orcamento"
