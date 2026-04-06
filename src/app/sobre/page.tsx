@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre | Diego Candido",
   description:
-    "Desenvolvedor Full Stack & Especialista em Dados. Ciência da Computação, Power BI, Python, SQL, Next.js. Atuando desde 2024.",
+    "Engenheiro de Dados & Desenvolvedor Full Stack. Formado em Ciência da Computação. Power BI, Python, SQL, BigQuery, Next.js. Projetos em produção desde 2024.",
   openGraph: {
     title: "Sobre | Diego Candido",
     description:
-      "Desenvolvedor Full Stack & Especialista em Dados — trajetória, stack e projetos desde 2024.",
+      "Engenheiro de Dados & Desenvolvedor Full Stack — pipelines ETL, dashboards e aplicações web em produção.",
   },
 };
 
@@ -60,13 +60,13 @@ const timeline = [
   },
   {
     ano: "2025",
-    titulo: "Dados entram no meu stack",
-    descricao: "Comecei a trabalhar com análise de dados para clientes — dashboards no Power BI, consultas SQL e automações em Python. Percebi que a combinação de desenvolvimento web com dados abria um espaço muito mais valioso no mercado.",
+    titulo: "Especialização em dados e automação",
+    descricao: "Expandi meu stack para análise e engenharia de dados — desenvolvendo dashboards no Power BI, pipelines de dados em Python e automações que reduziram trabalho manual em horas por semana para os clientes. Percebi que dev + dados é uma combinação rara e muito valorizada.",
   },
   {
     ano: "2026",
-    titulo: "Formação, carreira e produto próprio",
-    descricao: "Concluí a graduação em Ciência da Computação e ingressei formalmente na área de dados como Assistente de Dados — atuando com ETL, modelagem, BigQuery e Apache Airflow. No mesmo período, lancei o AgendaCliente, plataforma SaaS de agendamento que reúne tudo que aprendi em desenvolvimento e produto.",
+    titulo: "Engenharia de dados em produção & produto próprio",
+    descricao: "Passei a trabalhar com engenharia de dados em projetos reais — ETL, modelagem dimensional, BigQuery e Apache Airflow em ambiente corporativo. Concluí a graduação em Ciência da Computação e lancei o AgendaCliente, plataforma SaaS que já conta com usuários ativos.",
   },
 ];
 
@@ -90,7 +90,7 @@ export default function Sobre() {
                 Diego Candido
               </h1>
               <p className="text-sm text-[var(--color-text-secondary)]">
-                Desenvolvedor Full Stack & Especialista em Dados
+                Engenheiro de Dados & Desenvolvedor Full Stack
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function Sobre() {
           </div>
 
           <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-2xl">
-            Formado em Ciência da Computação, atuo como desenvolvedor Full Stack e Especialista em Dados. Construo dashboards no Power BI, pipelines ETL, automações em Python e aplicações web — sempre com foco em transformar dados e código em resultados reais para o negócio.
+            Formado em Ciência da Computação, trabalho na interseção entre engenharia de dados e desenvolvimento web. Já construí pipelines ETL em produção, dashboards analíticos no Power BI, automações em Python e aplicações web completas — sempre com foco em gerar resultado real para o negócio, não apenas entregar código.
           </p>
 
           {/* Links sociais */}
