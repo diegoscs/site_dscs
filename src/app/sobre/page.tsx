@@ -56,17 +56,17 @@ const timeline = [
   {
     ano: "2024",
     titulo: "Início no Desenvolvimento Web",
-    descricao: "Comecei como freelancer desenvolvendo sites e aplicações com React e Next.js, enquanto cursava Ciência da Computação.",
+    descricao: "Comecei como freelancer desenvolvendo sites e aplicações com React e Next.js, conciliando com a graduação em Ciência da Computação.",
   },
   {
     ano: "2025",
     titulo: "Entrada no Mundo dos Dados",
-    descricao: "Primeiros projetos com dados: dashboards em Power BI, automações em Python e consultas SQL para clientes freelancers. Os dados passaram a fazer parte do meu stack.",
+    descricao: "Primeiros projetos com dados: dashboards em Power BI, automações em Python e consultas SQL. Os dados passaram a fazer parte do meu stack.",
   },
   {
     ano: "2026",
-    titulo: "Carreira em Dados & Produto Próprio",
-    descricao: "Ingresso como Assistente de Dados, trabalhando com ETL, modelagem, BigQuery e Apache Airflow. No mesmo ano, lancei o AgendaCliente — plataforma SaaS de agendamento.",
+    titulo: "Formação & Carreira em Dados",
+    descricao: "Concluí a graduação em Ciência da Computação e ingressei como Assistente de Dados, trabalhando com ETL, BigQuery e Apache Airflow. Lancei o AgendaCliente — plataforma SaaS de agendamento.",
   },
 ];
 
@@ -80,8 +80,8 @@ export default function Sobre() {
             Sobre
           </p>
 
-          {/* Avatar placeholder + nome */}
-          <div className="flex items-center gap-4 mb-6">
+          {/* Avatar + nome */}
+          <div className="flex items-center gap-4 mb-5">
             <div className="w-14 h-14 rounded-full border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] flex items-center justify-center text-sm font-semibold text-[var(--color-text-muted)] flex-shrink-0">
               DC
             </div>
@@ -95,8 +95,28 @@ export default function Sobre() {
             </div>
           </div>
 
+          {/* Badges */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              Ciência da Computação
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Brasil
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 flex-shrink-0" />
+              Disponível para projetos
+            </span>
+          </div>
+
           <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-2xl">
-            Estudante de Ciência da Computação e Assistente de Dados. Atuo na análise, organização e automação de dados — criando dashboards no Power BI, pipelines ETL, automações em Python e soluções web que transformam informação em decisão.
+            Formado em Ciência da Computação, atuo como desenvolvedor Full Stack e Especialista em Dados. Construo dashboards no Power BI, pipelines ETL, automações em Python e aplicações web — sempre com foco em transformar dados e código em resultados reais para o negócio.
           </p>
 
           {/* Links sociais */}
@@ -177,6 +197,29 @@ export default function Sobre() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-1">
+              Quer trabalhar juntos?
+            </p>
+            <p className="text-sm text-[var(--color-text-secondary)]">
+              Me conta o seu projeto e eu te envio uma proposta em até 48h.
+            </p>
+          </div>
+          <a
+            href="/orcamento"
+            className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+          >
+            Solicitar orçamento
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </section>
     </>
