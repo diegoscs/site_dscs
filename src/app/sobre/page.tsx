@@ -55,18 +55,18 @@ const skills = [
 const timeline = [
   {
     ano: "2024",
-    titulo: "Início no Desenvolvimento Web",
-    descricao: "Comecei como freelancer desenvolvendo sites e aplicações com React e Next.js, conciliando com a graduação em Ciência da Computação.",
+    titulo: "Primeiros projetos como freelancer",
+    descricao: "Comecei a atender clientes como desenvolvedor independente, construindo sites e aplicações com React e Next.js. Foi onde aprendi na prática o que separa um código que funciona de um produto que o cliente realmente usa.",
   },
   {
     ano: "2025",
-    titulo: "Entrada no Mundo dos Dados",
-    descricao: "Primeiros projetos com dados: dashboards em Power BI, automações em Python e consultas SQL. Os dados passaram a fazer parte do meu stack.",
+    titulo: "Dados entram no meu stack",
+    descricao: "Comecei a trabalhar com análise de dados para clientes — dashboards no Power BI, consultas SQL e automações em Python. Percebi que a combinação de desenvolvimento web com dados abria um espaço muito mais valioso no mercado.",
   },
   {
     ano: "2026",
-    titulo: "Formação & Carreira em Dados",
-    descricao: "Concluí a graduação em Ciência da Computação e ingressei como Assistente de Dados, trabalhando com ETL, BigQuery e Apache Airflow. Lancei o AgendaCliente — plataforma SaaS de agendamento.",
+    titulo: "Formação, carreira e produto próprio",
+    descricao: "Concluí a graduação em Ciência da Computação e ingressei formalmente na área de dados como Assistente de Dados — atuando com ETL, modelagem, BigQuery e Apache Airflow. No mesmo período, lancei o AgendaCliente, plataforma SaaS de agendamento que reúne tudo que aprendi em desenvolvimento e produto.",
   },
 ];
 
