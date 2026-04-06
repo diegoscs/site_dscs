@@ -3,18 +3,27 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre | Diego Candido",
   description:
-    "Full Stack Developer & Data Engineer com experiência em Next.js, Node.js, Python e arquitetura de dados. Conheça minha trajetória desde 2019.",
+    "Desenvolvedor Full Stack & Especialista em Dados. Ciência da Computação, Power BI, Python, SQL, Next.js. Atuando desde 2024.",
   openGraph: {
     title: "Sobre | Diego Candido",
     description:
-      "Full Stack Developer & Data Engineer — trajetória, stack e projetos desde 2019.",
+      "Desenvolvedor Full Stack & Especialista em Dados — trajetória, stack e projetos desde 2024.",
   },
 };
 
 const skills = [
   {
+    categoria: "Dados & BI",
+    items: ["Power BI", "SQL Server", "Python", "BigQuery", "Apache Airflow", "ETL", "Pandas"],
+    icone: (
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path fillRule="evenodd" d="M2.75 2.5A1.75 1.75 0 001 4.25v1C1 6.216 1.784 7 2.75 7h1a1.75 1.75 0 001.732-1.5H6.5a.75.75 0 01.75.75v3.5A2.25 2.25 0 009.5 12h1.018c.121.848.85 1.5 1.732 1.5h1A1.75 1.75 0 0015 11.75v-1A1.75 1.75 0 0013.25 9h-1a1.75 1.75 0 00-1.732 1.5H9.5a.75.75 0 01-.75-.75v-3.5A2.25 2.25 0 006.5 4H5.482A1.75 1.75 0 003.75 2.5h-1zM2.5 4.25A.25.25 0 012.75 4h1a.25.25 0 01.25.25v1a.25.25 0 01-.25.25h-1a.25.25 0 01-.25-.25v-1zm9.75 6.25a.25.25 0 00-.25.25v1c0 .138.112.25.25.25h1a.25.25 0 00.25-.25v-1a.25.25 0 00-.25-.25h-1z" clipRule="evenodd"/>
+      </svg>
+    ),
+  },
+  {
     categoria: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "SvelteKit"],
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
     icone: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path fillRule="evenodd" clipRule="evenodd" d="M20.25 3L21 3.75V20.25L20.25 21H3.75L3 20.25V3.75L3.75 3H20.25ZM19.5 4.5L4.5 4.5L4.5 19.5H8.25L8.25 9.75H4.5V8.25H8.25H9.75H19.5V4.5ZM19.5 9.75H9.75L9.75 19.5H19.5V9.75Z"/>
@@ -23,7 +32,7 @@ const skills = [
   },
   {
     categoria: "Backend",
-    items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"],
+    items: ["Node.js", "PostgreSQL", "APIs REST", "Supabase"],
     icone: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M18 12V17C18 18.6569 15.3137 20 12 20C8.68629 20 6 18.6569 6 17V12M18 12V7M18 12C18 13.6569 15.3137 15 12 15C8.68629 15 6 13.6569 6 12M18 7C18 5.34315 15.3137 4 12 4C8.68629 4 6 5.34315 6 7M18 7C18 8.65685 15.3137 10 12 10C8.68629 10 6 8.65685 6 7M6 12V7"/>
@@ -31,8 +40,8 @@ const skills = [
     ),
   },
   {
-    categoria: "DevOps & Cloud",
-    items: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform", "GitHub Actions"],
+    categoria: "Cloud",
+    items: ["GCP", "BigQuery", "Cloud Computing", "CI/CD", "Docker"],
     icone: (
       <svg width="16" height="16" viewBox="0 -3 20 20" fill="currentColor" aria-hidden="true">
         <g transform="translate(-84, -3282)">
@@ -41,47 +50,23 @@ const skills = [
       </svg>
     ),
   },
-  {
-    categoria: "Engenharia de Dados",
-    items: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery", "Pandas"],
-    icone: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-        <path fillRule="evenodd" d="M2.75 2.5A1.75 1.75 0 001 4.25v1C1 6.216 1.784 7 2.75 7h1a1.75 1.75 0 001.732-1.5H6.5a.75.75 0 01.75.75v3.5A2.25 2.25 0 009.5 12h1.018c.121.848.85 1.5 1.732 1.5h1A1.75 1.75 0 0015 11.75v-1A1.75 1.75 0 0013.25 9h-1a1.75 1.75 0 00-1.732 1.5H9.5a.75.75 0 01-.75-.75v-3.5A2.25 2.25 0 006.5 4H5.482A1.75 1.75 0 003.75 2.5h-1zM2.5 4.25A.25.25 0 012.75 4h1a.25.25 0 01.25.25v1a.25.25 0 01-.25.25h-1a.25.25 0 01-.25-.25v-1zm9.75 6.25a.25.25 0 00-.25.25v1c0 .138.112.25.25.25h1a.25.25 0 00.25-.25v-1a.25.25 0 00-.25-.25h-1z" clipRule="evenodd"/>
-      </svg>
-    ),
-  },
 ];
 
 const timeline = [
   {
-    ano: "2019",
-    titulo: "Primeiros Passos",
-    descricao: "Comecei como freelancer desenvolvendo sites com React e Node.js.",
-  },
-  {
-    ano: "2020",
-    titulo: "Especialização",
-    descricao: "Aprofundamento em arquitetura de microsserviços, Kubernetes e infraestrutura escalável.",
-  },
-  {
-    ano: "2021",
-    titulo: "Engenharia de Dados",
-    descricao: "Primeiro pipeline ETL em produção com Airflow. Dados passaram a fazer parte do meu stack.",
-  },
-  {
-    ano: "2022",
-    titulo: "Produto Próprio",
-    descricao: "Lancei AgendaCliente, plataforma SaaS que atingiu 2.5K+ usuários em 18 meses.",
-  },
-  {
-    ano: "2023",
-    titulo: "Consultoria",
-    descricao: "Passei a oferecer consultoria técnica para startups e empresas — arquitetura e otimizações.",
-  },
-  {
     ano: "2024",
-    titulo: "Nível Seguinte",
-    descricao: "Foco em sistemas de alta escala, produtos orientados por dados e mentoria de engenheiros.",
+    titulo: "Início no Desenvolvimento Web",
+    descricao: "Comecei como freelancer desenvolvendo sites e aplicações com React e Next.js, enquanto cursava Ciência da Computação.",
+  },
+  {
+    ano: "2025",
+    titulo: "Entrada no Mundo dos Dados",
+    descricao: "Primeiros projetos com dados: dashboards em Power BI, automações em Python e consultas SQL para clientes freelancers. Os dados passaram a fazer parte do meu stack.",
+  },
+  {
+    ano: "2026",
+    titulo: "Carreira em Dados & Produto Próprio",
+    descricao: "Ingresso como Assistente de Dados, trabalhando com ETL, modelagem, BigQuery e Apache Airflow. No mesmo ano, lancei o AgendaCliente — plataforma SaaS de agendamento.",
   },
 ];
 
@@ -105,13 +90,13 @@ export default function Sobre() {
                 Diego Candido
               </h1>
               <p className="text-sm text-[var(--color-text-secondary)]">
-                Full Stack Developer & Data Engineer
+                Desenvolvedor Full Stack & Especialista em Dados
               </p>
             </div>
           </div>
 
           <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-2xl">
-            Desde 2019 trabalho com empresas de todos os tamanhos — de startups a corporações — ajudando-as a escalar suas operações com tecnologia. Meu foco é entregar soluções que não apenas funcionam, mas que geram resultados mensuráveis.
+            Estudante de Ciência da Computação e Assistente de Dados. Atuo na análise, organização e automação de dados — criando dashboards no Power BI, pipelines ETL, automações em Python e soluções web que transformam informação em decisão.
           </p>
 
           {/* Links sociais */}
