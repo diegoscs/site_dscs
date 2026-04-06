@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     title: "Serviços | Diego Candido",
     description:
       "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados.",
+    images: [
+      {
+        url: "https://dscs.com.br/og-servicos.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Serviços - Diego Candido",
+      },
+    ],
   },
 };
 

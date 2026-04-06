@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     description: "Transformo ideias em sistemas escaláveis",
     type: "website",
     locale: "pt_BR",
+    images: [
+      {
+        url: "https://dscs.com.br/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Diego Candido - Full Stack Developer",
+      },
+    ],
   },
 };
 
@@ -56,28 +64,55 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Diego Candido",
-              url: "https://dscs.com.br",
-              jobTitle: "Full Stack Developer & Data Engineer",
-              email: "diego.candido.pro@gmail.com",
-              sameAs: [
-                "https://github.com/diegoscs",
-                "https://www.linkedin.com/in/diego-candido-8b0850222/",
-              ],
-              knowsAbout: [
-                "Next.js", "React", "Node.js", "TypeScript",
-                "Python", "PostgreSQL", "Data Engineering",
-                "Docker", "Kubernetes",
-              ],
-              offers: {
-                "@type": "Offer",
-                url: "https://dscs.com.br/orcamento",
-                description: "Desenvolvimento de software sob medida",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Diego Candido",
+                url: "https://dscs.com.br",
+                jobTitle: "Full Stack Developer & Data Engineer",
+                email: "diego.candido.pro@gmail.com",
+                sameAs: [
+                  "https://github.com/diegoscs",
+                  "https://www.linkedin.com/in/diego-candido-8b0850222/",
+                ],
+                knowsAbout: [
+                  "Next.js", "React", "Node.js", "TypeScript",
+                  "Python", "PostgreSQL", "Data Engineering",
+                  "Docker", "Kubernetes",
+                ],
+                offers: {
+                  "@type": "Offer",
+                  url: "https://dscs.com.br/orcamento",
+                  description: "Desenvolvimento de software sob medida",
+                },
               },
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                name: "Diego Candido - Full Stack Developer",
+                url: "https://dscs.com.br",
+                email: "diego.candido.pro@gmail.com",
+                telephone: "+5511964197606",
+                areaServed: "BR",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  contactType: "Customer Support",
+                  telephone: "+5511964197606",
+                  email: "diego.candido.pro@gmail.com",
+                },
+                sameAs: [
+                  "https://github.com/diegoscs",
+                  "https://www.linkedin.com/in/diego-candido-8b0850222/",
+                  "https://wa.me/5511964197606",
+                ],
+                priceRange: "R$",
+                knowsAbout: [
+                  "Web Development", "Full Stack Development", "Data Engineering",
+                  "Next.js", "React", "Node.js", "Python",
+                ],
+              },
+            ]),
           }}
         />
         <a href="#conteudo-principal" className="skip-to-content">Pular para o conteúdo principal</a>

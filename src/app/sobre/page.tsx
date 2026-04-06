@@ -8,6 +8,14 @@ export const metadata: Metadata = {
     title: "Sobre | Diego Candido",
     description:
       "Full Stack Developer & Data Engineer — trajetória, stack e projetos desde 2019.",
+    images: [
+      {
+        url: "https://dscs.com.br/og-sobre.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sobre - Diego Candido",
+      },
+    ],
   },
 };
 

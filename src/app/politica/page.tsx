@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Política de Privacidade | Diego Candido",
     description: "Política de privacidade e conformidade com a LGPD.",
+    images: [
+      {
+        url: "https://dscs.com.br/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Política de Privacidade - Diego Candido",
+      },
+    ],
   },
 };
 

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     title: "Portfolio | Diego Candido",
     description:
       "Projetos de desenvolvimento web, engenharia de dados e sistemas escaláveis.",
+    images: [
+      {
+        url: "https://dscs.com.br/og-portfolio.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio - Diego Candido",
+      },
+    ],
   },
 };
 

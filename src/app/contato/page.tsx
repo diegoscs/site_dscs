@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contato | Diego Candido",
     description: "Entre em contato para conversar sobre seu projeto.",
+    images: [
+      {
+        url: "https://dscs.com.br/og-contato.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contato - Diego Candido",
+      },
+    ],
   },
 };
 
