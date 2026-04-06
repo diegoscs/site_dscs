@@ -177,16 +177,31 @@ export default function Sobre() {
       {/* Timeline */}
       <section className="py-16 px-6 border-t border-[var(--color-border-dark)]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs text-[var(--color-text-muted)] mb-8 uppercase tracking-widest font-mono">
+          <p className="text-xs text-[var(--color-text-muted)] mb-10 uppercase tracking-widest font-mono">
             Jornada
           </p>
-          <div className="space-y-0">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="flex gap-8 py-5 border-b border-[var(--color-border-dark)] last:border-b-0">
-                <span className="text-xs font-mono text-[var(--color-primary)] w-10 flex-shrink-0 pt-0.5">
-                  {item.ano}
-                </span>
-                <div>
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-[5px] top-2 bottom-2 w-px bg-[var(--color-border-dark)]" aria-hidden="true" />
+
+            <div className="space-y-8">
+              {timeline.map((item, idx) => (
+                <div key={idx} className="relative pl-8">
+                  {/* Dot */}
+                  <div
+                    className={`absolute left-0 top-1.5 w-[11px] h-[11px] rounded-full border-2 ${
+                      idx === timeline.length - 1
+                        ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
+                        : "border-[var(--color-border-hover)] bg-[var(--color-bg-dark)]"
+                    }`}
+                    aria-hidden="true"
+                  />
+
+                  {/* Year badge */}
+                  <span className="inline-block text-xs font-mono text-[var(--color-primary)] mb-1">
+                    {item.ano}
+                  </span>
+
                   <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-1">
                     {item.titulo}
                   </p>
@@ -194,8 +209,8 @@ export default function Sobre() {
                     {item.descricao}
                   </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
