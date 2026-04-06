@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre | Diego Candido",
   description:
-    "Full Stack Developer & Data Engineer com experiência em Next.js, Node.js, Python e arquitetura de dados. Conheça minha trajetória desde 2019.",
+    "Engenheiro de Dados & Desenvolvedor Full Stack. Formado em Ciência da Computação. Power BI, Python, SQL, BigQuery, Next.js. Projetos em produção desde 2024.",
   openGraph: {
     title: "Sobre | Diego Candido",
     description:
-      "Full Stack Developer & Data Engineer — trajetória, stack e projetos desde 2019.",
+      "Engenheiro de Dados & Desenvolvedor Full Stack — pipelines ETL, dashboards e aplicações web em produção.",
     images: [
       {
         url: "https://dscs.com.br/og-sobre.jpg",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const skills = [
   {
     categoria: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "SvelteKit"],
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
     icone: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path fillRule="evenodd" clipRule="evenodd" d="M20.25 3L21 3.75V20.25L20.25 21H3.75L3 20.25V3.75L3.75 3H20.25ZM19.5 4.5L4.5 4.5L4.5 19.5H8.25L8.25 9.75H4.5V8.25H8.25H9.75H19.5V4.5ZM19.5 9.75H9.75L9.75 19.5H19.5V9.75Z"/>
@@ -31,7 +31,7 @@ const skills = [
   },
   {
     categoria: "Backend",
-    items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis", "GraphQL"],
+    items: ["Node.js", "PostgreSQL", "APIs REST", "Supabase"],
     icone: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M18 12V17C18 18.6569 15.3137 20 12 20C8.68629 20 6 18.6569 6 17V12M18 12V7M18 12C18 13.6569 15.3137 15 12 15C8.68629 15 6 13.6569 6 12M18 7C18 5.34315 15.3137 4 12 4C8.68629 4 6 5.34315 6 7M18 7C18 8.65685 15.3137 10 12 10C8.68629 10 6 8.65685 6 7M6 12V7"/>
@@ -39,8 +39,8 @@ const skills = [
     ),
   },
   {
-    categoria: "DevOps & Cloud",
-    items: ["Docker", "Kubernetes", "AWS", "CI/CD", "Terraform", "GitHub Actions"],
+    categoria: "Cloud",
+    items: ["GCP", "BigQuery", "Cloud Computing", "CI/CD", "Docker"],
     icone: (
       <svg width="16" height="16" viewBox="0 -3 20 20" fill="currentColor" aria-hidden="true">
         <g transform="translate(-84, -3282)">
@@ -51,7 +51,7 @@ const skills = [
   },
   {
     categoria: "Engenharia de Dados",
-    items: ["Python", "dbt", "Airflow", "Snowflake", "BigQuery", "Pandas"],
+    items: ["Power BI", "SQL Server", "Python", "BigQuery", "Apache Airflow", "ETL", "Pandas"],
     icone: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
         <path fillRule="evenodd" d="M2.75 2.5A1.75 1.75 0 001 4.25v1C1 6.216 1.784 7 2.75 7h1a1.75 1.75 0 001.732-1.5H6.5a.75.75 0 01.75.75v3.5A2.25 2.25 0 009.5 12h1.018c.121.848.85 1.5 1.732 1.5h1A1.75 1.75 0 0015 11.75v-1A1.75 1.75 0 0013.25 9h-1a1.75 1.75 0 00-1.732 1.5H9.5a.75.75 0 01-.75-.75v-3.5A2.25 2.25 0 006.5 4H5.482A1.75 1.75 0 003.75 2.5h-1zM2.5 4.25A.25.25 0 012.75 4h1a.25.25 0 01.25.25v1a.25.25 0 01-.25.25h-1a.25.25 0 01-.25-.25v-1zm9.75 6.25a.25.25 0 00-.25.25v1c0 .138.112.25.25.25h1a.25.25 0 00.25-.25v-1a.25.25 0 00-.25-.25h-1z" clipRule="evenodd"/>
@@ -62,34 +62,19 @@ const skills = [
 
 const timeline = [
   {
-    ano: "2019",
-    titulo: "Primeiros Passos",
-    descricao: "Comecei como freelancer desenvolvendo sites com React e Node.js.",
-  },
-  {
-    ano: "2020",
-    titulo: "Especialização",
-    descricao: "Aprofundamento em arquitetura de microsserviços, Kubernetes e infraestrutura escalável.",
-  },
-  {
-    ano: "2021",
-    titulo: "Engenharia de Dados",
-    descricao: "Primeiro pipeline ETL em produção com Airflow. Dados passaram a fazer parte do meu stack.",
-  },
-  {
-    ano: "2022",
-    titulo: "Produto Próprio",
-    descricao: "Lancei AgendaCliente, plataforma SaaS que atingiu 2.5K+ usuários em 18 meses.",
-  },
-  {
-    ano: "2023",
-    titulo: "Consultoria",
-    descricao: "Passei a oferecer consultoria técnica para startups e empresas — arquitetura e otimizações.",
-  },
-  {
     ano: "2024",
-    titulo: "Nível Seguinte",
-    descricao: "Foco em sistemas de alta escala, produtos orientados por dados e mentoria de engenheiros.",
+    titulo: "Primeiros projetos como freelancer",
+    descricao: "Comecei a atender clientes como desenvolvedor independente, construindo sites e aplicações com React e Next.js. Foi onde aprendi na prática o que separa um código que funciona de um produto que o cliente realmente usa.",
+  },
+  {
+    ano: "2025",
+    titulo: "Especialização em dados e automação",
+    descricao: "Expandi meu stack para análise e engenharia de dados — desenvolvendo dashboards no Power BI, pipelines de dados em Python e automações que reduziram trabalho manual em horas por semana para os clientes. Percebi que dev + dados é uma combinação rara e muito valorizada.",
+  },
+  {
+    ano: "2026",
+    titulo: "Engenharia de dados em produção & produto próprio",
+    descricao: "Passei a trabalhar com engenharia de dados em projetos reais — ETL, modelagem dimensional, BigQuery e Apache Airflow em ambiente corporativo. Concluí a graduação em Ciência da Computação e lancei o AgendaCliente, plataforma SaaS que já conta com usuários ativos.",
   },
 ];
 
@@ -103,8 +88,8 @@ export default function Sobre() {
             Sobre
           </p>
 
-          {/* Avatar placeholder + nome */}
-          <div className="flex items-center gap-4 mb-6">
+          {/* Avatar + nome */}
+          <div className="flex items-center gap-4 mb-5">
             <div className="w-14 h-14 rounded-full border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] flex items-center justify-center text-sm font-semibold text-[var(--color-text-muted)] flex-shrink-0">
               DC
             </div>
@@ -113,13 +98,33 @@ export default function Sobre() {
                 Diego Candido
               </h1>
               <p className="text-sm text-[var(--color-text-secondary)]">
-                Full Stack Developer & Data Engineer
+                Engenheiro de Dados & Desenvolvedor Full Stack
               </p>
             </div>
           </div>
 
+          {/* Badges */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              Ciência da Computação
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Brasil
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-[var(--color-border-dark)] text-[var(--color-text-muted)] bg-[var(--color-bg-secondary-dark)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 flex-shrink-0" />
+              Disponível para projetos
+            </span>
+          </div>
+
           <p className="text-[var(--color-text-secondary)] leading-relaxed mb-8 max-w-2xl">
-            Desde 2019 trabalho com empresas de todos os tamanhos — de startups a corporações — ajudando-as a escalar suas operações com tecnologia. Meu foco é entregar soluções que não apenas funcionam, mas que geram resultados mensuráveis.
+            Formado em Ciência da Computação, trabalho na interseção entre engenharia de dados e desenvolvimento web. Já construí pipelines ETL em produção, dashboards analíticos no Power BI, automações em Python e aplicações web completas — sempre com foco em gerar resultado real para o negócio, não apenas entregar código.
           </p>
 
           {/* Links sociais */}
@@ -180,16 +185,31 @@ export default function Sobre() {
       {/* Timeline */}
       <section className="py-16 px-6 border-t border-[var(--color-border-dark)]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-xs text-[var(--color-text-muted)] mb-8 uppercase tracking-widest font-mono">
+          <p className="text-xs text-[var(--color-text-muted)] mb-10 uppercase tracking-widest font-mono">
             Jornada
           </p>
-          <div className="space-y-0">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="flex gap-8 py-5 border-b border-[var(--color-border-dark)] last:border-b-0">
-                <span className="text-xs font-mono text-[var(--color-primary)] w-10 flex-shrink-0 pt-0.5">
-                  {item.ano}
-                </span>
-                <div>
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-[5px] top-2 bottom-2 w-px bg-[var(--color-border-dark)]" aria-hidden="true" />
+
+            <div className="space-y-8">
+              {timeline.map((item, idx) => (
+                <div key={idx} className="relative pl-8">
+                  {/* Dot */}
+                  <div
+                    className={`absolute left-0 top-1.5 w-[11px] h-[11px] rounded-full border-2 ${
+                      idx === timeline.length - 1
+                        ? "border-[var(--color-primary)] bg-[var(--color-primary)]"
+                        : "border-[var(--color-border-hover)] bg-[var(--color-bg-dark)]"
+                    }`}
+                    aria-hidden="true"
+                  />
+
+                  {/* Year badge */}
+                  <span className="inline-block text-xs font-mono text-[var(--color-primary)] mb-1">
+                    {item.ano}
+                  </span>
+
                   <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-1">
                     {item.titulo}
                   </p>
@@ -197,9 +217,32 @@ export default function Sobre() {
                     {item.descricao}
                   </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-12 px-6 border-t border-[var(--color-border-dark)]">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-1">
+              Quer trabalhar juntos?
+            </p>
+            <p className="text-sm text-[var(--color-text-secondary)]">
+              Me conta o seu projeto e eu te envio uma proposta em até 48h.
+            </p>
+          </div>
+          <a
+            href="/orcamento"
+            className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors duration-150"
+          >
+            Solicitar orçamento
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </section>
     </>
