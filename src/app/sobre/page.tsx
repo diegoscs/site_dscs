@@ -10,7 +10,7 @@ export const metadata: Metadata = {
       "Engenheiro de Dados & Desenvolvedor Full Stack — pipelines ETL, dashboards e aplicações web em produção.",
     images: [
       {
-        url: "https://dscs.com.br/og-sobre.jpg",
+        url: new URL("/api/og?title=Sobre&description=Engenheiro de Dados & Full Stack Developer&category=Trajetória", "https://dscs.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Sobre - Diego Candido",

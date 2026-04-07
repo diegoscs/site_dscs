@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Preencha o formulário e receba uma proposta personalizada em até 48h.",
     images: [
       {
-        url: "https://dscs.com.br/og-orcamento.jpg",
+        url: new URL("/api/og?title=Solicitar Orçamento&description=Proposta personalizada em até 48h&category=Negócios", "https://dscs.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Solicitar Orçamento - Diego Candido",

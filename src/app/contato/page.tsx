@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: "Entre em contato para conversar sobre seu projeto.",
     images: [
       {
-        url: "https://dscs.com.br/og-contato.jpg",
+        url: new URL("/api/og?title=Contato&description=Vamos conversar sobre seu projeto&category=Comunicação", "https://dscs.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Contato - Diego Candido",

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: "Política de privacidade e conformidade com a LGPD.",
     images: [
       {
-        url: "https://dscs.com.br/og-image.jpg",
+        url: new URL("/api/og?title=Política de Privacidade&description=Conformidade LGPD e proteção de dados&category=Legal", "https://dscs.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Política de Privacidade - Diego Candido",

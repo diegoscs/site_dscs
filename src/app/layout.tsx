@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     images: [
       {
-        url: "https://dscs.com.br/og-image.jpg",
+        url: new URL("/api/og?title=Diego Candido&description=Full Stack Developer&category=DSCS", "https://dscs.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Diego Candido - Full Stack Developer",
