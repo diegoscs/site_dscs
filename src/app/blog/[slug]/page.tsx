@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { notFound } from "next/navigation";
+import "@/styles/blog.css";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -98,7 +99,7 @@ export default async function BlogPostPage({
 
       {/* Content */}
       <section className="px-6 pb-24">
-        <div className="max-w-3xl mx-auto prose prose-invert max-w-none">
+        <div className="max-w-3xl mx-auto prose prose-invert">
           <div
             className="prose prose-invert prose-headings:text-[var(--color-text-dark)] prose-headings:font-bold prose-a:text-[var(--color-accent)] prose-a:no-underline hover:prose-a:underline prose-strong:text-[var(--color-text-dark)] prose-code:bg-[var(--color-bg-secondary)] prose-code:text-[var(--color-accent)] prose-code:px-2 prose-code:py-1 prose-code:rounded prose-pre:bg-[var(--color-bg-secondary)] prose-pre:border prose-pre:border-[var(--color-border)]"
             dangerouslySetInnerHTML={{ __html: post.content || "" }}

@@ -1,0 +1,11 @@
+/* Fira Code - Loaded only on blog pages */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap");
+
+code {
+  font-family: "Fira Code", monospace;
+  font-size: 0.875rem;
+}
+
+pre {
+  font-family: "Fira Code", monospace;
+}
