@@ -147,6 +147,15 @@ export default function Sobre() {
               LinkedIn
               <span className="sr-only">(abre em nova aba)</span>
             </a>
+            <a
+              href="https://www.instagram.com/dscs.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium border border-[var(--color-border-dark)] text-[var(--color-text-secondary)] hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-dark)] transition-colors"
+            >
+              Instagram
+              <span className="sr-only">(abre em nova aba)</span>
+            </a>
           </div>
         </div>
       </section>

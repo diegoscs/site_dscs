@@ -10,7 +10,6 @@ type FormData = {
   recursos: string[];
   descricao: string;
   prazo: string;
-  complexidade: string;
   temDesign: string;
   referencias: string;
   nome: string;
@@ -200,60 +199,12 @@ const prazos = [
   { id: "flexivel", label: "Flexível", sub: "sem prazo definido" },
 ];
 
-const complexidades = [
-  { id: "simples", label: "Simples", sub: "Funcionalidades básicas" },
-  { id: "medio", label: "Médio", sub: "Integrações e customizações" },
-  { id: "complexo", label: "Complexo", sub: "Alto volume, escala, IA" },
-];
-
 const designStatuses = [
   { id: "nao-tenho", label: "Não tenho design" },
   { id: "tenho-referencia", label: "Tenho referências" },
   { id: "tenho-wireframe", label: "Tenho wireframe" },
   { id: "design-pronto", label: "Design pronto" },
 ];
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-function buildWhatsAppMessage(data: FormData): string {
-  const objetivo = objetivos.find((o) => o.id === data.objetivo)?.label ?? data.objetivo;
-  const servico = servicos.find((s) => s.id === data.servico)?.label ?? data.servico;
-  const prazo = prazos.find((p) => p.id === data.prazo)?.label ?? data.prazo;
-  const complexidade = complexidades.find((c) => c.id === data.complexidade)?.label ?? data.complexidade;
-  const design = designStatuses.find((d) => d.id === data.temDesign)?.label ?? data.temDesign;
-
-  const recursos = data.recursos.length > 0
-    ? (recursosPorServico[data.servico] ?? [])
-        .filter((r) => data.recursos.includes(r.id))
-        .map((r) => r.label)
-        .join(", ")
-    : "Nenhum";
-
-  return [
-    `*Nova Solicitação de Orçamento — DSCS*`,
-    ``,
-    `*Objetivo:* ${objetivo}`,
-    `*Serviço:* ${servico}`,
-    `*Recursos extras:* ${recursos}`,
-    ``,
-    `*Contexto do projeto:*`,
-    data.descricao || "(não informado)",
-    ``,
-    `*Prazo:* ${prazo}`,
-    `*Complexidade:* ${complexidade}`,
-    `*Design:* ${design}`,
-    data.referencias ? `*Referências:* ${data.referencias}` : "",
-    ``,
-    `*Contato:*`,
-    `Nome: ${data.nome}`,
-    `WhatsApp: ${data.whatsapp}`,
-    `Email: ${data.email}`,
-    data.empresa ? `Empresa: ${data.empresa}` : "",
-    `Preferência de contato: ${data.contato}`,
-  ]
-    .filter((line) => line !== "")
-    .join("\n");
-}
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -286,7 +237,7 @@ function StepLabel({ step, total }: { step: number; total: number }) {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 5;
 
 const emptyForm: FormData = {
   objetivo: "",
@@ -294,7 +245,6 @@ const emptyForm: FormData = {
   recursos: [],
   descricao: "",
   prazo: "",
-  complexidade: "",
   temDesign: "",
   referencias: "",
   nome: "",
@@ -323,18 +273,30 @@ export default function OrcamentoForm() {
     if (step === 1) return !!formData.objetivo;
     if (step === 2) return !!formData.servico;
     if (step === 3) return true;
-    if (step === 4) return !!formData.prazo && !!formData.complexidade && !!formData.temDesign;
-    if (step === 5) return !!formData.nome && !!formData.whatsapp && !!formData.email;
+    if (step === 4) return !!formData.nome && !!formData.whatsapp && !!formData.email;
     return true;
   };
 
   const handleNext = () => { if (canAdvance() && step < TOTAL_STEPS) setStep((s) => s + 1); };
   const handleBack = () => setStep((s) => Math.max(1, s - 1));
 
-  const handleSubmit = () => {
-    const msg = buildWhatsAppMessage(formData);
-    window.open(`https://wa.me/5511964197606?text=${encodeURIComponent(msg)}`, "_blank");
-    setDone(true);
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch('/api/orcamento', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setDone(true);
+      } else {
+        alert('Erro ao enviar solicitação. Tente novamente.');
+      }
+    } catch (error) {
+      console.error('Erro ao enviar:', error);
+      alert('Erro ao enviar solicitação. Tente novamente.');
+    }
   };
 
   const cardBase = "p-4 rounded-xl border cursor-pointer transition-all duration-150 text-left";
@@ -350,9 +312,9 @@ export default function OrcamentoForm() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h2 className="text-xl font-bold text-[var(--color-text-dark)] mb-3">Solicitação enviada!</h2>
+        <h2 className="text-xl font-bold text-[var(--color-text-dark)] mb-3">Solicitação enviada com sucesso!</h2>
         <p className="text-sm text-[var(--color-text-secondary)] max-w-sm mx-auto mb-8 leading-relaxed">
-          O WhatsApp foi aberto com o resumo do seu projeto. Responderei em até 24h com uma proposta personalizada.
+          Sua solicitação foi recebida em dscs.pro.contato@gmail.com. Responderei em até 48h com uma proposta personalizada.
         </p>
         <button
           onClick={() => { setDone(false); setStep(1); setFormData(emptyForm); }}
@@ -365,9 +327,11 @@ export default function OrcamentoForm() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <StepLabel step={step} total={TOTAL_STEPS} />
-      <ProgressDots current={step - 1} total={TOTAL_STEPS} />
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {/* Form column */}
+      <div className="lg:col-span-2">
+        <StepLabel step={step} total={TOTAL_STEPS} />
+        <ProgressDots current={step - 1} total={TOTAL_STEPS} />
 
       {/* ── Step 1: Objetivo ────────────────────────────────────────────── */}
       {step === 1 && (
@@ -486,19 +450,6 @@ export default function OrcamentoForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-[var(--color-text-dark)] mb-3">Complexidade estimada</label>
-            <div className="grid grid-cols-3 gap-2">
-              {complexidades.map((c) => (
-                <button key={c.id} type="button" onClick={() => update({ complexidade: c.id })}
-                  className={`${cardBase} text-center ${formData.complexidade === c.id ? cardActive : cardInactive}`}>
-                  <p className="text-sm font-medium text-[var(--color-text-dark)]">{c.label}</p>
-                  <p className="text-xs text-[var(--color-text-muted)] mt-0.5">{c.sub}</p>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div>
             <label className="block text-sm font-medium text-[var(--color-text-dark)] mb-3">Status do design</label>
             <div className="grid grid-cols-2 gap-2">
               {designStatuses.map((d) => (
@@ -586,7 +537,6 @@ export default function OrcamentoForm() {
                 targetStep: 3,
               },
               { label: "Prazo", value: prazos.find((p) => p.id === formData.prazo)?.label, targetStep: 4 },
-              { label: "Complexidade", value: complexidades.find((c) => c.id === formData.complexidade)?.label, targetStep: 4 },
               { label: "Design", value: designStatuses.find((d) => d.id === formData.temDesign)?.label, targetStep: 4 },
               { label: "Contato", value: `${formData.nome} · ${formData.whatsapp}`, targetStep: 5 },
             ].map(({ label, value, targetStep }) => (
@@ -602,27 +552,52 @@ export default function OrcamentoForm() {
         </div>
       )}
 
-      {/* ── Navigation ──────────────────────────────────────────────────── */}
-      <div className="flex items-center justify-between mt-10 pt-6 border-t border-[var(--color-border-dark)]">
-        {step > 1 ? (
-          <button type="button" onClick={handleBack} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-dark)] transition-colors">
-            ← Voltar
-          </button>
-        ) : (
-          <span />
-        )}
+        {/* ── Navigation ──────────────────────────────────────────────────── */}
+        <div className="flex items-center justify-between mt-10 pt-6 border-t border-[var(--color-border-dark)]">
+          {step > 1 ? (
+            <button type="button" onClick={handleBack} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-dark)] transition-colors">
+              ← Voltar
+            </button>
+          ) : (
+            <span />
+          )}
 
-        {step < TOTAL_STEPS ? (
-          <button type="button" onClick={handleNext} disabled={!canAdvance()}
-            className="px-6 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
-            Continuar →
-          </button>
-        ) : (
-          <button type="button" onClick={handleSubmit}
-            className="px-6 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-primary)] text-white hover:opacity-90 transition-opacity">
-            Enviar pelo WhatsApp
-          </button>
-        )}
+          {step < TOTAL_STEPS ? (
+            <button type="button" onClick={handleNext} disabled={!canAdvance()}
+              className="px-6 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+              Continuar →
+            </button>
+          ) : (
+            <button type="button" onClick={handleSubmit}
+              className="px-6 py-2.5 rounded-md text-sm font-semibold bg-[var(--color-primary)] text-white hover:opacity-90 transition-opacity">
+              Enviar Solicitação
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Preview panel */}
+      <div className="hidden lg:block sticky top-8 h-fit">
+        <div className="rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] p-5">
+          <h3 className="text-sm font-semibold text-[var(--color-text-dark)] mb-4 uppercase tracking-widest">Resumo do seu projeto</h3>
+          <div className="space-y-3">
+            {[
+              { label: "Objetivo", value: objetivos.find((o) => o.id === formData.objetivo)?.label },
+              { label: "Serviço", value: servicos.find((s) => s.id === formData.servico)?.label },
+              { label: "Prazo", value: prazos.find((p) => p.id === formData.prazo)?.label },
+              { label: "Design", value: designStatuses.find((d) => d.id === formData.temDesign)?.label },
+              { label: "Recursos", value: formData.recursos.length > 0 ? (recursosPorServico[formData.servico] ?? []).filter((r) => formData.recursos.includes(r.id)).map((r) => r.label).join(", ") : null },
+              { label: "Descrição", value: formData.descricao ? formData.descricao.substring(0, 60) + (formData.descricao.length > 60 ? "..." : "") : null },
+            ].map(({ label, value }) => (
+              value ? (
+                <div key={label} className="pb-3 border-b border-[var(--color-border-dark)] last:border-b-0 last:pb-0">
+                  <p className="text-xs text-[var(--color-text-muted)] uppercase tracking-widest font-mono mb-1">{label}</p>
+                  <p className="text-sm text-[var(--color-text-dark)] leading-snug">{value}</p>
+                </div>
+              ) : null
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
