@@ -1,7 +1,4 @@
-import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -159,24 +156,11 @@ export async function POST(request: NextRequest) {
       </html>
     `;
 
-    // Enviar email
-    const result = await resend.emails.send({
-      from: 'noreply@dscs.pro <noreply@dscs.pro>',
-      to: 'dscs.pro.contato@gmail.com',
-      replyTo: email,
-      subject: `Nova Solicitação de Orçamento - ${nome}`,
-      html: htmlContent,
-    });
-
-    if (result.error) {
-      return NextResponse.json(
-        { error: 'Erro ao enviar email' },
-        { status: 500 }
-      );
-    }
+    // TODO: Implementar envio de email quando serviço estiver configurado
+    console.log('Orçamento recebido:', { nome, email, whatsapp, objetivo, servico });
 
     return NextResponse.json(
-      { success: true, message: 'Email enviado com sucesso!' },
+      { success: true, message: 'Orçamento recebido com sucesso!' },
       { status: 200 }
     );
   } catch (error) {
