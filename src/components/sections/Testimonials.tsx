@@ -5,7 +5,7 @@ const testimonials = [
     role: "Founder & CEO",
     company: "TechVentures",
     content:
-      "Trabalhar com Diego foi transformador para nosso produto. Ele não é apenas um desenvolvedor — é um parceiro estratégico. Em 6 meses tínhamos um MVP robusto e escalável.",
+      "Trabalhar com a equipe foi transformador para nosso produto. Não são apenas desenvolvedores — são parceiros estratégicos. Em 6 meses tínhamos um MVP robusto e escalável.",
     avatar: "AS",
   },
   {
@@ -14,7 +14,7 @@ const testimonials = [
     role: "CTO",
     company: "DataFlow Solutions",
     content:
-      "Diego entregou um pipeline ETL que reduziu nossos custos de infraestrutura em 40% e aumentou a velocidade das queries em 10x. Resultados mensuráveis.",
+      "A equipe entregou um pipeline ETL que reduziu nossos custos de infraestrutura em 40% e aumentou a velocidade das queries em 10x. Resultados mensuráveis.",
     avatar: "CM",
   },
   {

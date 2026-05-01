@@ -52,27 +52,27 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-[var(--color-border-dark)]">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-          {/* Logo + slogan */}
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+          {/* Logo + Tagline */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-3">
-              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-6 w-auto" />
-              <span className="text-sm font-semibold text-[var(--color-text-dark)]">Candido Digital</span>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-10 w-auto" />
             </Link>
-            <p className="text-xs text-[var(--color-text-secondary)] font-medium mb-3">Desenvolvimento & Dados</p>
+            <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-2">Candido Digital</p>
+            <p className="text-xs text-[var(--color-text-secondary)] font-medium mb-4">Desenvolvimento & Dados</p>
             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
               Transformamos ideias em soluções escaláveis. Full Stack, Data-Driven.
             </p>
           </div>
 
-          {/* Nav links */}
+          {/* Navigation */}
           <div>
             <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
               Navegação
             </p>
-            <ul className="space-y-2.5">
-              {navLinks.map((link) => (
+            <ul className="space-y-3">
+              {navLinks.slice(0, 4).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -85,30 +85,65 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social icon buttons */}
+          {/* Contact */}
           <div>
             <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
-              Redes
+              Contato
             </p>
-            <div className="flex gap-2">
-              {socialLinks.map((s) => (
+            <ul className="space-y-3">
+              <li>
                 <a
-                  key={s.label}
-                  href={s.href}
+                  href="mailto:contato.candido.digital@gmail.com"
+                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors"
+                >
+                  contato.candido.digital@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5511964197606"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={s.label}
-                  className="w-9 h-9 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] hover:border-[var(--color-border-hover)] hover:text-[var(--color-text-dark)] transition-colors"
+                  className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors"
                 >
-                  {s.icon}
-                  <span className="sr-only">{s.label} (abre em nova aba)</span>
+                  +55 (11) 96419-7606
                 </a>
+              </li>
+              <li className="pt-2">
+                <Link
+                  href="/orcamento"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors"
+                >
+                  Solicitar orçamento
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Networks */}
+          <div>
+            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
+              Redes Sociais
+            </p>
+            <ul className="space-y-3">
+              {socialLinks.map((s) => (
+                <li key={s.label}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text-dark)] transition-colors"
+                  >
+                    <span className="flex-shrink-0 w-5 h-5">{s.icon}</span>
+                    <span>{s.label}</span>
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-[var(--color-border-dark)] pt-6">
+        <div className="border-t border-[var(--color-border-dark)] pt-8">
           <p className="text-xs text-[var(--color-text-muted)]">
             © {currentYear} Candido Digital. Todos os direitos reservados.
           </p>

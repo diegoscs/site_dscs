@@ -64,7 +64,7 @@ export default function Hero() {
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
             <span className="ml-auto text-xs text-[var(--color-text-muted)] font-mono">
-              diego-candido / portfolio
+              candido-digital / portfolio
             </span>
           </div>
           <div className="p-6 text-left overflow-auto">
