@@ -31,7 +31,7 @@ export default function Navbar() {
             ))}
 
             <Link href="/" className="flex items-center mx-2">
-              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-8 h-8" />
+              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-10 w-auto" />
             </Link>
 
             {navLinks.slice(2).map((link) => (
@@ -47,7 +47,7 @@ export default function Navbar() {
 
           {/* Mobile: logo à esquerda + hamburguer */}
           <Link href="/" className="flex md:hidden items-center">
-            <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-8 h-8" />
+            <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-10 w-auto" />
           </Link>
 
           {/* Mobile Menu Button */}

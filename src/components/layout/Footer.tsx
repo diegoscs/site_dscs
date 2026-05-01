@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Logo + slogan */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-3">
-              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-6 h-6" />
+              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-6 w-auto" />
               <span className="text-sm font-semibold text-[var(--color-text-dark)]">Candido Digital</span>
             </Link>
             <p className="text-xs text-[var(--color-text-secondary)] font-medium mb-3">Desenvolvimento & Dados</p>
