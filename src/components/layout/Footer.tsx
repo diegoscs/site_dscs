@@ -116,14 +116,6 @@ export default function Footer() {
                   <span>WhatsApp</span>
                 </a>
               </li>
-              <li className="pt-2">
-                <Link
-                  href="/orcamento"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-semibold bg-[var(--color-text-dark)] text-[var(--color-bg-dark)] hover:bg-white transition-colors"
-                >
-                  Solicitar orçamento
-                </Link>
-              </li>
             </ul>
           </div>
 
