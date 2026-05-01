@@ -31,11 +31,8 @@ export default function Navbar() {
             ))}
 
             <Link href="/" className="flex items-center gap-2 mx-2">
-              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-6 h-6" />
-              <div className="flex flex-col">
-                <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">Candido Digital</span>
-                <span className="text-xs text-[var(--color-text-secondary)]">Desenvolvimento & Dados</span>
-              </div>
+              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-5 h-5" />
+              <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">Candido Digital</span>
             </Link>
 
             {navLinks.slice(2).map((link) => (
@@ -50,12 +47,9 @@ export default function Navbar() {
           </div>
 
           {/* Mobile: logo à esquerda + hamburguer */}
-          <Link href="/" className="flex md:hidden items-center gap-2.5">
-            <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-6 h-6" />
-            <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">Candido Digital</span>
-              <span className="text-xs text-[var(--color-text-secondary)]">Dev & Dados</span>
-            </div>
+          <Link href="/" className="flex md:hidden items-center gap-2">
+            <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-5 h-5" />
+            <span className="text-sm font-semibold tracking-tight text-[var(--color-text-dark)]">Candido Digital</span>
           </Link>
 
           {/* Mobile Menu Button */}
