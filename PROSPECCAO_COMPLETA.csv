@@ -1,0 +1,61 @@
+ID,Nome Empresa,Categoria,Bairro,Telefone,Email,Tem Site?,Status Contato,Data Contato,Resposta,Observações,Ticket Estimado,Prioridade
+1,Clínica Sorriso Perfeito,Dentista,Pinheiros,11 98765-4321,contato@clinicasorriso.sp,,Não contactado,,,"Pareceu pronta para agendar online",R$ 2500-3500,Alta
+2,Odontologia Vila Mariana,Dentista,Vila Mariana,11 97654-3210,,❌,Não contactado,,,"Só tem WhatsApp",R$ 2500-3500,Alta
+3,Dr. Gustavo Implantes,Dentista,Zona Leste,11 96543-2109,,❌,Não contactado,,,"Google Maps com 87 reviews",R$ 2500-3500,Alta
+4,Consultório Dental São Paulo,Dentista,Centro,11 95432-1098,,❌,Não contactado,,,"Atende convênio",R$ 2500-3500,Alta
+5,Dentista Dr. Carlos,Dentista,Zona Leste,11 94321-0987,,❌,Não contactado,,,"Pequeno, 1 profissional",R$ 1500-2000,Média
+6,Salão Cabelos & Cia,Salão de Beleza,Vila Mariana,11 99876-5432,cabelos@cia.sp,,Não contactado,,,"Alto padrão, muitos clientes",R$ 2000-3000,Alta
+7,Beleza Total Pinheiros,Salão de Beleza,Pinheiros,11 98765-4321,,❌,Não contactado,,,"Só agenda por WhatsApp",R$ 2000-3000,Alta
+8,Studio Cabelo Zona Leste,Salão de Beleza,Zona Leste,11 97654-3210,,❌,Não contactado,,,"64 avaliações Google Maps",R$ 2000-3000,Alta
+9,Manicure Cristal,Salão de Beleza,Perdizes,11 96543-2109,,❌,Não contactado,,,"Especializado em manicure",R$ 1500-2000,Média
+10,Cabeleireiro João Silva,Salão de Beleza,Vila Formosa,11 95432-1098,,❌,Não contactado,,,"Tradicional, 20+ anos",R$ 1500-2000,Média
+11,Academia Gold,Academia,Pinheiros,11 99887-6543,contato@academiagold.sp,,Não contactado,,,"Site desatualizado",R$ 3000-4000,Alta
+12,Musculação & Força,Academia,Zona Leste,11 98876-5432,,❌,Não contactado,,,"200+ membros, precisa app",R$ 3000-4000,Alta
+13,Smart Gym Lapa,Academia,Lapa,11 97765-4321,,❌,Não contactado,,,"Moderno, falta sistema online",R$ 3000-4000,Alta
+14,Academia Corpo Perfeito,Academia,Vila Mariana,11 96654-3210,,❌,Não contactado,,,"Muitos clientes querendo virtual",R$ 3000-4000,Alta
+15,Personal Training SP,Academia,Consolação,11 95543-2109,,❌,Não contactado,,,"Só online/WhatsApp",R$ 2000-3000,Média
+16,Restaurante Bella Italia,Restaurante,Pinheiros,11 99998-8765,contato@bellaitalia.sp,,Não contactado,,,"Popular, falta cardápio online",R$ 2500-3500,Alta
+17,Pizzaria Don Giovanni,Restaurante,Zona Leste,11 98887-7654,,❌,Não contactado,,,"Bem avaliado, sem site",R$ 2000-3000,Alta
+18,Churrascaria Gaucho,Restaurante,Vila Mariana,11 97776-6543,,❌,Não contactado,,,"Tradicional, muita fila",R$ 3000-4000,Alta
+19,Café Aroma Perfeito,Restaurante,Pinheiros,11 96665-5432,,❌,Não contactado,,,"Instagram bom, site ruim",R$ 1500-2500,Média
+20,Bar do Silva,Restaurante,Lapa,11 95554-4321,,❌,Não contactado,,,"Noturno, precisa online",R$ 1500-2500,Média
+21,Imobiliária Premier,Imobiliária,Pinheiros,11 99909-9876,contato@premierimovel.sp,,Não contactado,,,"10+ imóveis, site básico",R$ 4000-6000,Alta
+22,Imóveis São Paulo,Imobiliária,Vila Mariana,11 98898-8765,,❌,Não contactado,,,"Só brochura impressa",R$ 4000-6000,Alta
+23,Brokers Imóveis,Imobiliária,Centro,11 97787-7654,,❌,Não contactado,,,"Lotado de clientes",R$ 4000-6000,Alta
+24,Real Estate Zona Leste,Imobiliária,Zona Leste,11 96676-6543,,❌,Não contactado,,,"Precisa portal de imóveis",R$ 3000-5000,Média
+25,Imóveis Residenciais,Imobiliária,Tatuapé,11 95565-5432,,❌,Não contactado,,,"Família pequena",R$ 2000-3500,Média
+26,Clínica Médica Vitória,Clínica Médica,Pinheiros,11 99911-0987,vitoria@clinicavitoria.sp,,Não contactado,,,"Vários especialistas",R$ 3000-4500,Alta
+27,Consultório Médico Dr. Rafael,Clínica Médica,Vila Mariana,11 98800-0987,,❌,Não contactado,,,"Bem localizado",R$ 2500-3500,Alta
+28,Clínica de Fisioterapia Move,Clínica Médica,Zona Leste,11 97789-8765,,❌,Não contactado,,,"30+ pacientes",R$ 2500-3500,Alta
+29,Consultório Psicologia Bem-Estar,Clínica Médica,Pinheiros,11 96678-7654,,❌,Não contactado,,,"Precisa sistema de agendamento",R$ 2000-3000,Média
+30,Fisioterapia São Paulo,Clínica Médica,Zona Leste,11 95567-6543,,❌,Não contactado,,,"Grupos de pacientes",R$ 2000-3000,Média
+31,Loja de Roupas Premium,Loja Física,Pinheiros,11 99922-1098,vendas@premiumroupas.sp,,Não contactado,,,"E-commerce + física",R$ 3000-5000,Alta
+32,Ótica São Paulo,Loja Física,Vila Mariana,11 98811-1098,,❌,Não contactado,,,"Vários modelos, sem online",R$ 2000-3000,Alta
+33,Loja Móveis Design,Loja Física,Mooca,11 97700-9876,,❌,Não contactado,,,"Precisa showroom online",R$ 3000-5000,Alta
+34,Calçados Italiana,Loja Física,Centro,11 96689-8765,,❌,Não contactado,,,"Sem presença online",R$ 2000-3000,Média
+35,Loja de Eletrônicos TechCom,Loja Física,Zona Leste,11 95578-7654,,❌,Não contactado,,,"Estoque grande",R$ 2500-3500,Média
+36,Encanador Profissional SP,Serviço,Zona Leste,11 99933-2109,contato@encanadorsp.sp,,Não contactado,,,"Precisa sistema de orçamento",R$ 2000-3000,Alta
+37,Eletricista Carlos,Serviço,Vila Mariana,11 98822-2109,,❌,Não contactado,,,"Muitas solicitações",R$ 1500-2500,Alta
+38,Pintor São Paulo,Serviço,Pinheiros,11 97711-0987,,❌,Não contactado,,,"Conhecimentos não chegam",R$ 1500-2500,Média
+39,Hidráulica Express,Serviço,Zona Leste,11 96600-9876,,❌,Não contactado,,,"Urgente sempre",R$ 1500-2500,Média
+40,Serviços de Limpeza Pro,Serviço,Zona Oeste,11 95589-8765,,❌,Não contactado,,,"Comercial + residencial",R$ 1500-2500,Média
+41,Contabilidade Silva & Cia,Contabilidade,Centro,11 99944-3210,contato@contabilidadesilva.sp,,Não contactado,,,"Pequenas empresas",R$ 3000-5000,Alta
+42,Consultoria Tributária,Contabilidade,Pinheiros,11 98833-3210,,❌,Não contactado,,,"B2B, alto valor",R$ 5000-8000,Alta
+43,Contador Fernando,Contabilidade,Zona Leste,11 97722-1098,,❌,Não contactado,,,"Freelancer, precisa visibilidade",R$ 2000-3000,Média
+44,Consultoria Empresarial Pro,Contabilidade,Centro,11 96611-0987,,❌,Não contactado,,,"Crescendo",R$ 4000-6000,Alta
+45,Auditoria Contábil SP,Contabilidade,Zona Sul,11 95600-9876,,❌,Não contactado,,,"Especializada",R$ 4000-6000,Alta
+46,Personal Trainer Anderson,Serviço,Pinheiros,11 99955-4321,contato@andersontrainer.sp,,Não contactado,,,"Independente, busca clientes",R$ 1500-2500,Média
+47,Coach de Vida,Serviço,Vila Mariana,11 98844-4321,,❌,Não contactado,,,"Online + presencial",R$ 2000-3000,Média
+48,Instrutor de Yoga,Serviço,Pinheiros,11 97733-2109,,❌,Não contactado,,,"Studio pequeno",R$ 1500-2000,Média
+49,Pilates Studio,Serviço,Consolação,11 96622-1098,,❌,Não contactado,,,"Cresce a demanda",R$ 2000-3000,Média
+50,Treino Funcional,Serviço,Zona Leste,11 95611-0987,,❌,Não contactado,,,"Outdoor + indoor",R$ 1500-2500,Média
+51,Escola de Inglês Top,Educação,Pinheiros,11 99966-5432,contato@topinglish.sp,,Não contactado,,,"Plataforma online ruim",R$ 2500-3500,Média
+52,Curso de Programação,Educação,Centro,11 98855-5432,,❌,Não contactado,,,"Crescendo, site desatualizado",R$ 3000-4000,Alta
+53,Aula Particular Matemática,Educação,Vila Mariana,11 97744-3210,,❌,Não contactado,,,"Independente",R$ 1000-1500,Baixa
+54,Instituto de Dança,Educação,Zona Leste,11 96633-2109,,❌,Não contactado,,,"Muitos alunos",R$ 2000-3000,Média
+55,Escola de Música,Educação,Lapa,11 95622-1098,,❌,Não contactado,,,"Aulas presenciais",R$ 1500-2500,Média
+56,Pet Shop Amiguinhos,Varejo,Pinheiros,11 99977-6543,contato@petshopamigos.sp,,Não contactado,,,"Bandanhas, falta loja online",R$ 2000-3000,Média
+57,Veterinária Pet Care,Serviço,Vila Mariana,11 98866-6543,,❌,Não contactado,,,"Agendamento desorganizado",R$ 2000-3000,Média
+58,Pet Grooming Studio,Serviço,Zona Leste,11 97755-4321,,❌,Não contactado,,,"Popular, só WhatsApp",R$ 1500-2500,Média
+59,Ração Pet Premium,Varejo,Centro,11 96644-3210,,❌,Não contactado,,,"Falta delivery online",R$ 2000-3000,Média
+60,Clínica Veterinária São Paulo,Serviço,Zona Leste,11 95633-2109,,❌,Não contactado,,,"24h, sistema antigo",R$ 2500-3500,Alta

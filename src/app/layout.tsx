@@ -4,25 +4,25 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Diego Candido | Full Stack Developer",
+  title: "Candido Digital | Desenvolvimento & Dados",
   description:
-    "Transformo ideias em sistemas escaláveis. Full Stack Developer especializado em soluções web modernas, painéis administrativos e plataformas data-driven.",
+    "Transformamos ideias em soluções escaláveis. Especializado em Full Stack Development, Data Engineering e plataformas data-driven.",
   keywords:
-    "Full Stack Developer, React, Next.js, Node.js, Web Development, São Paulo",
-  authors: [{ name: "Diego Candido", url: "https://dscs.com.br" }],
-  creator: "Diego Candido",
-  metadataBase: new URL("https://dscs.com.br"),
+    "Full Stack Developer, React, Next.js, Node.js, Data Engineering, Web Development, São Paulo",
+  authors: [{ name: "Candido Digital", url: "https://candidodigital.com.br" }],
+  creator: "Candido Digital",
+  metadataBase: new URL("https://candidodigital.com.br"),
   openGraph: {
-    title: "Diego Candido | Full Stack Developer",
-    description: "Transformo ideias em sistemas escaláveis",
+    title: "Candido Digital | Desenvolvimento & Dados",
+    description: "Transformamos ideias em soluções escaláveis",
     type: "website",
     locale: "pt_BR",
     images: [
       {
-        url: new URL("/api/og?title=Diego Candido&description=Full Stack Developer&category=DSCS", "https://dscs.com.br").toString(),
+        url: new URL("/api/og?title=Candido Digital&description=Desenvolvimento & Dados&category=Candido Digital", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Diego Candido - Full Stack Developer",
+        alt: "Candido Digital - Desenvolvimento & Dados",
       },
     ],
   },
@@ -73,10 +73,10 @@ export default function RootLayout({
             __html: JSON.stringify([
               {
                 "@context": "https://schema.org",
-                "@type": "Person",
-                name: "Diego Candido",
-                url: "https://dscs.com.br",
-                jobTitle: "Full Stack Developer & Data Engineer",
+                "@type": "Organization",
+                name: "Candido Digital",
+                url: "https://candidodigital.com.br",
+                description: "Desenvolvimento & Dados - Transformamos ideias em soluções escaláveis",
                 email: "diego.candido.pro@gmail.com",
                 sameAs: [
                   "https://github.com/diegoscs",
@@ -89,15 +89,15 @@ export default function RootLayout({
                 ],
                 offers: {
                   "@type": "Offer",
-                  url: "https://dscs.com.br/orcamento",
+                  url: "https://candidodigital.com.br/orcamento",
                   description: "Desenvolvimento de software sob medida",
                 },
               },
               {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                name: "Diego Candido - Full Stack Developer",
-                url: "https://dscs.com.br",
+                name: "Candido Digital",
+                url: "https://candidodigital.com.br",
                 email: "diego.candido.pro@gmail.com",
                 telephone: "+5511964197606",
                 areaServed: "BR",

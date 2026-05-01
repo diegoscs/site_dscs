@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados.",
     images: [
       {
-        url: new URL("/api/og?title=Serviços&description=Landing pages, sites, painéis, automação&category=Desenvolvimento", "https://dscs.com.br").toString(),
+        url: new URL("/api/og?title=Serviços&description=Landing pages, sites, painéis, automação&category=Desenvolvimento", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Serviços - Diego Candido",

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | Diego Candido",
+  title: "Política de Privacidade | Candido Digital",
   description:
-    "Política de privacidade e conformidade com a LGPD do site DSCS — Diego Candido, Full Stack Developer.",
+    "Política de privacidade e conformidade com a LGPD do site Candido Digital — Desenvolvimento & Dados.",
   openGraph: {
-    title: "Política de Privacidade | Diego Candido",
+    title: "Política de Privacidade | Candido Digital",
     description: "Política de privacidade e conformidade com a LGPD.",
     images: [
       {
-        url: new URL("/api/og?title=Política de Privacidade&description=Conformidade LGPD e proteção de dados&category=Legal", "https://dscs.com.br").toString(),
+        url: new URL("/api/og?title=Política de Privacidade&description=Conformidade LGPD e proteção de dados&category=Legal", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Política de Privacidade - Diego Candido",
+        alt: "Política de Privacidade - Candido Digital",
       },
     ],
   },
@@ -43,8 +43,8 @@ export default function Politica() {
           <div>
             <h2 className="text-base font-semibold text-[var(--color-text-dark)] mb-3">1. Quem somos</h2>
             <p>
-              Este site é operado por Diego Candido (DSCS), desenvolvedor independente com sede no Brasil.
-              Nosso site é <strong className="text-[var(--color-text-dark)]">sitedscs.vercel.app</strong>.
+              Este site é operado por Candido Digital, especializado em Desenvolvimento & Dados com sede no Brasil.
+              Nosso site é <strong className="text-[var(--color-text-dark)]">candidodigital.com.br</strong>.
               Dúvidas sobre privacidade podem ser enviadas para{" "}
               <a href="mailto:diego.candido.pro@gmail.com" className="text-[var(--color-primary)] hover:underline">
                 diego.candido.pro@gmail.com

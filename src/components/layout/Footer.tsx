@@ -57,11 +57,14 @@ export default function Footer() {
           {/* Logo + slogan */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <img src="/favicon-32x32.png" alt="DSCS Logo" className="w-6 h-6" />
-              <span className="text-sm font-semibold text-[var(--color-text-dark)]">DSCS</span>
+              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="w-6 h-6" />
+              <div className="flex flex-col">
+                <span className="text-sm font-semibold text-[var(--color-text-dark)]">Candido Digital</span>
+                <span className="text-xs text-[var(--color-text-secondary)]">Desenvolvimento & Dados</span>
+              </div>
             </Link>
             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-              Sistemas escaláveis, dados que decidem.
+              Transformamos ideias em soluções escaláveis. Full Stack, Data-Driven.
             </p>
           </div>
 
@@ -109,7 +112,7 @@ export default function Footer() {
 
         <div className="border-t border-[var(--color-border-dark)] pt-6">
           <p className="text-xs text-[var(--color-text-muted)]">
-            © {currentYear} Diego Candido. Todos os direitos reservados.
+            © {currentYear} Candido Digital. Todos os direitos reservados.
           </p>
         </div>
       </div>

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://dscs.com.br/sitemap.xml",
+    sitemap: "https://candidodigital.com.br/sitemap.xml",
   };
 }

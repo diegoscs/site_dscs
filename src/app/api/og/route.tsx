@@ -6,9 +6,9 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
   // Parâmetros da URL
-  const title = searchParams.get("title") || "Diego Candido";
-  const description = searchParams.get("description") || "Full Stack Developer";
-  const category = searchParams.get("category") || "DSCS";
+  const title = searchParams.get("title") || "Candido Digital";
+  const description = searchParams.get("description") || "Desenvolvimento & Dados";
+  const category = searchParams.get("category") || "Candido Digital";
 
   return new ImageResponse(
     (
@@ -113,7 +113,7 @@ export async function GET(request: Request) {
               fontWeight: "500",
             }}
           >
-            dscs.com.br
+            candidodigital.com.br
           </div>
 
           {/* Right: Logo/Brand */}
@@ -142,7 +142,7 @@ export async function GET(request: Request) {
             >
               ◆
             </div>
-            DSCS
+            Candido Digital
           </div>
         </div>
       </div>

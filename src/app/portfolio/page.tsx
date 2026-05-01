@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Projetos de desenvolvimento web, engenharia de dados e sistemas escaláveis.",
     images: [
       {
-        url: new URL("/api/og?title=Portfolio&description=Projetos web, data engineering e sistemas escaláveis&category=Projetos", "https://dscs.com.br").toString(),
+        url: new URL("/api/og?title=Portfolio&description=Projetos web, data engineering e sistemas escaláveis&category=Projetos", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
         alt: "Portfolio - Diego Candido",
