@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Serviços | Diego Candido",
+  title: "Serviços | Candido Digital",
   description:
     "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados. Soluções que funcionam em produção.",
   openGraph: {
-    title: "Serviços | Diego Candido",
+    title: "Serviços | Candido Digital",
     description:
       "Landing pages, sites completos, sistemas web, painéis, automação e engenharia de dados.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: new URL("/api/og?title=Serviços&description=Landing pages, sites, painéis, automação&category=Desenvolvimento", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Serviços - Diego Candido",
+        alt: "Serviços - Candido Digital",
       },
     ],
   },

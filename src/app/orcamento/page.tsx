@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import OrcamentoForm from "@/components/forms/OrcamentoForm";
 
 export const metadata: Metadata = {
-  title: "Solicitar Orçamento | Diego Candido",
+  title: "Solicitar Orçamento | Candido Digital",
   description:
     "Solicite um orçamento personalizado para seu projeto. Preencha o formulário e receba uma proposta em até 48h.",
   openGraph: {
-    title: "Solicitar Orçamento | Diego Candido",
+    title: "Solicitar Orçamento | Candido Digital",
     description:
       "Preencha o formulário e receba uma proposta personalizada em até 48h.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: new URL("/api/og?title=Solicitar Orçamento&description=Proposta personalizada em até 48h&category=Negócios", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Solicitar Orçamento - Diego Candido",
+        alt: "Solicitar Orçamento - Candido Digital",
       },
     ],
   },

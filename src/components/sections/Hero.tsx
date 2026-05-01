@@ -71,7 +71,7 @@ export default function Hero() {
             <pre className="text-xs sm:text-sm font-mono text-[var(--color-text-secondary)] leading-relaxed">
               <code>
                 <span className="text-[var(--color-text-muted)]">{"// "}</span>
-                <span className="text-[var(--color-text-secondary)]">Diego Candido — desenvolvedor full stack</span>
+                <span className="text-[var(--color-text-secondary)]">Candido Digital — desenvolvedor full stack</span>
                 {"\n\n"}
                 <span className="text-[#5b6af0]">const</span>
                 <span className="text-[var(--color-text-dark)]"> desenvolvedor</span>
@@ -79,7 +79,7 @@ export default function Hero() {
                 {"\n"}
                 {"  "}<span className="text-[#79c0ff]">nome</span>
                 <span className="text-[var(--color-text-secondary)]">: </span>
-                <span className="text-[#a5d6ff]">&quot;Diego Candido&quot;</span>
+                <span className="text-[#a5d6ff]">&quot;Candido Digital&quot;</span>
                 <span className="text-[var(--color-text-secondary)]">,</span>
                 {"\n"}
                 {"  "}<span className="text-[#79c0ff]">especialidades</span>

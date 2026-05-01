@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Portfolio from "@/components/sections/Portfolio";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Diego Candido",
+  title: "Portfolio | Candido Digital",
   description:
     "Projetos de desenvolvimento web, engenharia de dados e sistemas escaláveis. Full Stack Developer & Data Engineer baseado no Brasil.",
   openGraph: {
-    title: "Portfolio | Diego Candido",
+    title: "Portfolio | Candido Digital",
     description:
       "Projetos de desenvolvimento web, engenharia de dados e sistemas escaláveis.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: new URL("/api/og?title=Portfolio&description=Projetos web, data engineering e sistemas escaláveis&category=Projetos", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Portfolio - Diego Candido",
+        alt: "Portfolio - Candido Digital",
       },
     ],
   },

@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
           <div class="container">
             <div class="header">
               <h2 style="margin: 0;">Nova Solicitação de Orçamento</h2>
-              <p style="margin: 5px 0 0 0; font-size: 14px; opacity: 0.9;">dscs.pro</p>
+              <p style="margin: 5px 0 0 0; font-size: 14px; opacity: 0.9;">Candido Digital</p>
             </div>
             <div class="content">
               <div class="section">

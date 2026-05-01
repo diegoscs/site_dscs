@@ -77,7 +77,7 @@ export default function RootLayout({
                 name: "Candido Digital",
                 url: "https://candidodigital.com.br",
                 description: "Desenvolvimento & Dados - Transformamos ideias em soluções escaláveis",
-                email: "diego.candido.pro@gmail.com",
+                email: "contato.candido.digital@gmail.com",
                 sameAs: [
                   "https://github.com/diegoscs",
                   "https://www.linkedin.com/in/diego-candido-8b0850222/",
@@ -98,14 +98,14 @@ export default function RootLayout({
                 "@type": "LocalBusiness",
                 name: "Candido Digital",
                 url: "https://candidodigital.com.br",
-                email: "diego.candido.pro@gmail.com",
+                email: "contato.candido.digital@gmail.com",
                 telephone: "+5511964197606",
                 areaServed: "BR",
                 contactPoint: {
                   "@type": "ContactPoint",
                   contactType: "Customer Support",
                   telephone: "+5511964197606",
-                  email: "diego.candido.pro@gmail.com",
+                  email: "contato.candido.digital@gmail.com",
                 },
                 sameAs: [
                   "https://github.com/diegoscs",

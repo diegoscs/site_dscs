@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sobre | Diego Candido",
+  title: "Sobre | Candido Digital",
   description:
     "Engenheiro de Dados & Desenvolvedor Full Stack. Formado em Ciência da Computação. Power BI, Python, SQL, BigQuery, Next.js. Projetos em produção desde 2024.",
   openGraph: {
-    title: "Sobre | Diego Candido",
+    title: "Sobre | Candido Digital",
     description:
       "Engenheiro de Dados & Desenvolvedor Full Stack — pipelines ETL, dashboards e aplicações web em produção.",
     images: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
         url: new URL("/api/og?title=Sobre&description=Engenheiro de Dados & Full Stack Developer&category=Trajetória", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Sobre - Diego Candido",
+        alt: "Sobre - Candido Digital",
       },
     ],
   },
@@ -95,7 +95,7 @@ export default function Sobre() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-[var(--color-text-dark)] leading-tight">
-                Diego Candido
+                Candido Digital
               </h1>
               <p className="text-sm text-[var(--color-text-secondary)]">
                 Engenheiro de Dados & Desenvolvedor Full Stack

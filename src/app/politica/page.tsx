@@ -46,8 +46,8 @@ export default function Politica() {
               Este site é operado por Candido Digital, especializado em Desenvolvimento & Dados com sede no Brasil.
               Nosso site é <strong className="text-[var(--color-text-dark)]">candidodigital.com.br</strong>.
               Dúvidas sobre privacidade podem ser enviadas para{" "}
-              <a href="mailto:diego.candido.pro@gmail.com" className="text-[var(--color-primary)] hover:underline">
-                diego.candido.pro@gmail.com
+              <a href="mailto:contato.candido.digital@gmail.com" className="text-[var(--color-primary)] hover:underline">
+                contato.candido.digital@gmail.com
               </a>.
             </p>
           </div>
@@ -116,8 +116,8 @@ export default function Politica() {
             </ul>
             <p className="mt-3">
               Para exercer qualquer um desses direitos, entre em contato pelo e-mail{" "}
-              <a href="mailto:diego.candido.pro@gmail.com" className="text-[var(--color-primary)] hover:underline">
-                diego.candido.pro@gmail.com
+              <a href="mailto:contato.candido.digital@gmail.com" className="text-[var(--color-primary)] hover:underline">
+                contato.candido.digital@gmail.com
               </a>.
             </p>
           </div>
@@ -145,8 +145,8 @@ export default function Politica() {
             <p>
               Para dúvidas, solicitações ou reclamações relacionadas a esta política de privacidade,
               entre em contato pelo e-mail{" "}
-              <a href="mailto:diego.candido.pro@gmail.com" className="text-[var(--color-primary)] hover:underline">
-                diego.candido.pro@gmail.com
+              <a href="mailto:contato.candido.digital@gmail.com" className="text-[var(--color-primary)] hover:underline">
+                contato.candido.digital@gmail.com
               </a>.
             </p>
           </div>

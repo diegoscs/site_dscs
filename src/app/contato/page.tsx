@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contato | Diego Candido",
+  title: "Contato | Candido Digital",
   description:
     "Entre em contato para conversar sobre seu projeto. Disponível via WhatsApp, e-mail e LinkedIn.",
   openGraph: {
-    title: "Contato | Diego Candido",
+    title: "Contato | Candido Digital",
     description: "Entre em contato para conversar sobre seu projeto.",
     images: [
       {
         url: new URL("/api/og?title=Contato&description=Vamos conversar sobre seu projeto&category=Comunicação", "https://candidodigital.com.br").toString(),
         width: 1200,
         height: 630,
-        alt: "Contato - Diego Candido",
+        alt: "Contato - Candido Digital",
       },
     ],
   },
@@ -105,7 +105,7 @@ export default function Contato() {
 
             {/* Email */}
             <a
-              href="mailto:diego.candido.pro@gmail.com"
+              href="mailto:contato.candido.digital@gmail.com"
               className="group flex items-start gap-4 p-5 rounded-xl border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] hover:border-[var(--color-border-hover)] transition-colors"
             >
               <div className="w-10 h-10 rounded-lg border border-[var(--color-border-dark)] flex items-center justify-center text-[var(--color-text-secondary)] group-hover:border-[var(--color-border-hover)] flex-shrink-0 transition-colors">
