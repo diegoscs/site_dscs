@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Force rebuild: 2026-05-01T20:30:00Z
 const nextConfig = {
   reactStrictMode: true,
   images: {
