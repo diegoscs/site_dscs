@@ -90,9 +90,11 @@ export default function Sobre() {
 
           {/* Avatar + nome */}
           <div className="flex items-center gap-4 mb-5">
-            <div className="w-14 h-14 rounded-full border border-[var(--color-border-dark)] bg-[var(--color-bg-secondary-dark)] flex items-center justify-center text-sm font-semibold text-[var(--color-text-muted)] flex-shrink-0">
-              DC
-            </div>
+            <img
+              src="/FOTO_PERFIL.jpg"
+              alt="Diego Candido"
+              className="w-14 h-14 rounded-full border border-[var(--color-border-dark)] object-cover flex-shrink-0"
+            />
             <div>
               <h1 className="text-2xl font-bold text-[var(--color-text-dark)] leading-tight">
                 Candido Digital
