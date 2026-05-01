@@ -53,22 +53,19 @@ export default function Footer() {
   return (
     <footer className="border-t border-[var(--color-border-dark)]">
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Logo + Tagline */}
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <img src="/candido-digital-logo.png" alt="Candido Digital Logo" className="h-10 w-auto" />
-            </Link>
-            <p className="text-sm font-semibold text-[var(--color-text-dark)] mb-2">Candido Digital</p>
-            <p className="text-xs text-[var(--color-text-secondary)] font-medium mb-4">Desenvolvimento & Dados</p>
-            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+            <p className="text-2xl font-bold text-[var(--color-text-dark)] mb-4">Candido Digital</p>
+            <p className="text-sm text-[var(--color-text-secondary)] font-medium mb-6">Desenvolvimento & Dados</p>
+            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed text-justify">
               Transformamos ideias em soluções escaláveis. Full Stack, Data-Driven.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
+            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-6">
               Navegação
             </p>
             <ul className="space-y-3">
@@ -87,7 +84,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
+            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-6">
               Contato
             </p>
             <ul className="space-y-3">
@@ -121,7 +118,7 @@ export default function Footer() {
 
           {/* Social Networks */}
           <div>
-            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-4">
+            <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-widest mb-6">
               Redes Sociais
             </p>
             <ul className="space-y-3">
@@ -142,7 +139,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[var(--color-border-dark)] pt-8">
+        <div className="border-t border-[var(--color-border-dark)] pt-10">
           <p className="text-xs text-[var(--color-text-muted)]">
             © {currentYear} Candido Digital. Todos os direitos reservados.
           </p>
